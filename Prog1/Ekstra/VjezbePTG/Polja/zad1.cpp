@@ -19,7 +19,7 @@ int main(){
         if (polje[i] > max){
             max = polje[i];
         }
-    }
+    } 
 
     std::cout << "Max: " << max << "\n" << "Min: " << min << std::endl;
     std::cout << "Max/Min: " << max/min << "\n";
