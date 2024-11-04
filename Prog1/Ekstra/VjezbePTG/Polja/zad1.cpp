@@ -25,4 +25,4 @@ int main(){
     std::cout << "Max/Min: " << max/min << "\n";
 
     return 0;
-}   
+}
