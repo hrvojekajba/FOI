@@ -21,6 +21,6 @@ int main(){
     int* int_polje = new int[N];
 
     for(int i = 0; i < N; i++){
-        char_polje[N] = rand()
+        char_polje[N] = rand();
     }
 }
