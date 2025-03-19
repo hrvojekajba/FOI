@@ -60,7 +60,7 @@ void cetvrti(){
 		cout << "Unesite C: "; cin >> c;
 		vrijeme_kraj();
 		cout << "Vrijeme potrebno za unos stranica: " << vrijeme_proteklo() << "\n";
-	}while ((a <= 0) || (b <= 0) || (c <= 0) || (a > b+c) || (b > a+c) || (c > a+b));
+	}while ((a <= 0) || (b <= 0) || (c <= 0) || (a >= b+c) || (b >= a+c) || (c >= a+b));
 	
 	float s =float(a+b+c)/2;
 	float P = sqrt(s*(s-a)*(s-b)*(s-c));
