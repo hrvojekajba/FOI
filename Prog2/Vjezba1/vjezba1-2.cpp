@@ -65,7 +65,7 @@ void cetvrti(){
         cout << "Unesite B: "; cin >> b;
         cout << "Unesite C: "; cin >> c;
         vrijeme_kraj;
-    }while((a <= 0) || (b <= 0) || (c <= 0) || (a > b+c) || (b > a+c) || (c > a+b));
+    }while((a <= 0) || (b <= 0) || (c <= 0) || (a >= b+c) || (b >= a+c) || (c >= a+b));
     cout << "Vrijeme unosa stranica trokuta je: " << vrijeme_proteklo << "\n";
 
     float s = float(a+b+c)/2;
