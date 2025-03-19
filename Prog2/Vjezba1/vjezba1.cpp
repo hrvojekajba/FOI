@@ -1,4 +1,5 @@
 #include <iostream>
+#include<cstring>
 #include <string>
 #include <cmath>
 #include "biblioteka_vrijeme.cc"
