@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 
-
 struct Node{
     int sifra;
     char ime_prezime[25];
@@ -53,15 +52,15 @@ void trazi(Node *head){
 
 void izbrisi(Node *head){
     int trazena_sifra;
-    std::cout << "Unesite sifru stavke koju zelite izbrisati: "; std::cin >> trazena_sifra;
-    Node *tekuci = head->next;
-    Node *prethodni = head;
-    while (tekuci != nullptr){
-        if (tekuci->sifra == trazena_sifra){
-            prethodni->next = tekuci->next;
-            delete tekuci; break;
+    std::cout << "Unesite sifru stavke koju zelite izbrisati: "; std::cin >> trazena_sifra; //unos sifre ciju stavku treba izbrisati
+    Node *tekuci = head->next; //prvi podatkovni element liste
+    Node *prethodni = head; //element iza tekuceg
+    while (tekuci != nullptr){ //iteriramo kroz vezanu listu
+        if (tekuci->sifra == trazena_sifra){ 
+            prethodni->next = tekuci->next; //postavljamo prethodnu stavku kao sljedecu
+            delete tekuci; break; //brisemo trenutnu stavku
         }
-        prethodni = tekuci;
+        prethodni = tekuci; //ako ne pronademo stavku nastavimo iterirati
         tekuci = tekuci->next;
     }
 }
