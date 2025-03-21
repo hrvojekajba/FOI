@@ -3,7 +3,7 @@
 
 
 struct Node{
-    char sifra[10];
+    int sifra;
     char ime_prezime[25];
     char naziv_rada[50];
     Node *next = nullptr;
@@ -37,6 +37,35 @@ void ispis(Node *head){
     }
 }
 
+void trazi(Node *head){
+    int trazena_sifra; 
+    std::cout << "Unesite sifru stavke koju trazite: "; std::cin >> trazena_sifra; //trazimo unos sifre po kojoj trazimo
+    Node *tekuci = head->next; //prvi podatkovni element liste
+    while (tekuci != nullptr){ //iteracija kroz vezanu listu
+        if (tekuci->sifra == trazena_sifra){ //trazi ako je sifra trenutne stavke ista sifri koju smo unjeli
+            std::cout << "Sifra: " << tekuci->sifra << std::endl;
+            std::cout << "Ime i prezime autora: " << tekuci->ime_prezime << std::endl;
+            std::cout << "Naziv rada: " << tekuci->naziv_rada << std::endl << std::endl;
+        }
+        tekuci = tekuci->next; //ide na sljedecu stavku ako nije pronadeno
+    }
+}
+
+void izbrisi(Node *head){
+    int trazena_sifra;
+    std::cout << "Unesite sifru stavke koju zelite izbrisati: "; std::cin >> trazena_sifra;
+    Node *tekuci = head->next;
+    Node *prethodni = head;
+    while (tekuci != nullptr){
+        if (tekuci->sifra == trazena_sifra){
+            prethodni->next = tekuci->next;
+            delete tekuci; break;
+        }
+        prethodni = tekuci;
+        tekuci = tekuci->next;
+    }
+}
+
 int main(){
     Node *head = new Node;
     head->next = nullptr;
@@ -54,8 +83,8 @@ int main(){
         switch (izbor){
             case 1: unos(head); break;
             case 2: ispis(head); break;
-            case 3: break;
-            case 4: break;
+            case 3: trazi(head); break;
+            case 4: izbrisi(head); break;
             case 9: break;
             default: std::cout << "Pogresan unos!\n";
         }
