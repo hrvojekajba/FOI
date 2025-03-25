@@ -1,5 +1,4 @@
 #include<iostream>
-#include<string>
 
 struct lista {
     int maticni;
