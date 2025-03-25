@@ -27,21 +27,26 @@ void unos(lista *glava){
 
 void ispis(lista *glava){
     lista *tekuci = glava->sljedeci;
+    int suma_maticni;
     while(tekuci != nullptr){
         std::cout << "\n---Element liste---\n";
-        std::cout << "Maticni broj: " << tekuci->maticni << "\n";
+        std::cout << "Maticni broj: " << tekuci->maticni << "\n"; suma_maticni += tekuci->maticni;
         std::cout << "Ime i prezime: " << tekuci->ime_prezime << "\n";
-        std::cout << "Godina upisa: " << tekuci->godina << "\n\n";
+        std::cout << "Godina upisa: " << tekuci->godina << "\n";
+        std::cout << "Vrijednost pokazivaca: " << tekuci->sljedeci << "\n\n";
         tekuci = tekuci->sljedeci;
     }
+    std::cout << "Suma svih maticnih brojeva: " << suma_maticni << "\n";
 }
 
 void pretrazivanje(lista *glava){
     lista *tekuci = glava->sljedeci;
     int trazena_sifra;
+    bool pronaden = false;
     std::cout << "Unesite maticni broj koji trazite: "; std::cin >> trazena_sifra;
     while (tekuci != nullptr){
         if (tekuci->maticni == trazena_sifra){
+            pronaden = true;
             std::cout << "\n---Pronaden element---\n";
             std::cout << "Maticni broj: " << tekuci->maticni << "\n";
             std::cout << "Ime i prezime: " << tekuci->ime_prezime << "\n"; 
@@ -49,6 +54,7 @@ void pretrazivanje(lista *glava){
         }
         tekuci = tekuci->sljedeci;
     }
+    if (!pronaden) std::cout << "\nElement nije pronaden\n\n";
 }
 
 void brisanje(lista *glava){
@@ -56,16 +62,19 @@ void brisanje(lista *glava){
     tekuci = glava->sljedeci;
     prethodni = glava;
     int trazena_sifra;
+    bool izbrisano = false;
     std::cout << "Unesite maticni broj stavke koju zelite izbrisati: "; std::cin >> trazena_sifra;
     while(tekuci != nullptr){
         if (tekuci->maticni == trazena_sifra){
+            izbrisano = true;
             prethodni->sljedeci = tekuci->sljedeci;
             delete tekuci; 
-            std::cout << "Element izbrisan\n"; break;
+            std::cout << "\nElement izbrisan\n\n"; break;
         }
         prethodni = tekuci;
         tekuci = tekuci->sljedeci;
     }
+    if (!izbrisano) std::cout << "\nElement nije pronaden\n\n";
 }
 
 int main(){
