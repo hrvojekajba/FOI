@@ -60,6 +60,7 @@ void brisanje(element *glava){
              postavljas na istu vrijednost koju je imal brisi->prethodni*/
             delete brisi;
             brisanje = true;
+            break;
         }
         prethodni = prethodni->sljedeci;
         brisi = brisi->sljedeci;
