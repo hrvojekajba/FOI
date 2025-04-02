@@ -1,4 +1,5 @@
 #include<iostream>
+#include<cstring>
 #include "../biblioteka_vrijeme_linux.cc"
 
 //struktura liste
@@ -125,6 +126,64 @@ void brisanje(lista *glava){
 }
 
 //TODO: napravi kopiranje
+void kopiraj(lista *gl_lista, stablo *gl_stablo){
+    lista *tekuci_lista = gl_lista->sljedeci; //inicijaliziraj prvi podatkovni element liste (prvi element koji mozes kopirati)
+
+    while(tekuci_lista){ //iteriraj kroz sve elemente liste
+        stablo *novi = new stablo; //novi cvor stabla
+        //kopiranje podataka u novi cvor
+        novi->sifra = tekuci_lista->sifra;
+        novi->cijena = tekuci_lista->cijena;
+        novi->vrijeme_unosa = tekuci_lista->vrijeme_unosa;
+        std::strcpy(novi->naziv, tekuci_lista->naziv);
+        std::strcpy(novi->proizvodac, tekuci_lista->proizvodac);
+        novi->desno = nullptr;
+        novi->lijevi = nullptr;
+
+        stablo *zadnji = gl_stablo; //vrh stabla
+        bool dalje = true; //pomocna bool var
+
+        do{ //radi ovaj loop sve dok se ne upise cvor
+            if (novi->sifra > zadnji->sifra){ //ako je sifra veca od trenutne sifre, ides DESNO
+                if(zadnji->desno != nullptr){ //ako desno nije prazno, iteriraj dalje
+                    zadnji = zadnji->desno;
+                }
+                else{
+                    zadnji->desno = novi; //ako desno je prazno, upisi cvor i stavi dalje false
+                    dalje = false;
+                }
+            }
+            else{ //ako je sifra manja od trenutnog cvora ides LIJEVO
+                if(zadnji->lijevi != nullptr){
+                    zadnji = zadnji->lijevi; //ako lijevo nije prazno, iteriraj dalje
+                }
+                else{ //ako lijevo JE prazno, dodaj element i stavi dalje na false
+                    zadnji->lijevi = novi;
+                    dalje = false;
+                }
+            }
+        }while(dalje);
+        tekuci_lista = tekuci_lista->sljedeci; //iteriraj na sljedeci element liste
+    }
+}
+
+void ispisi_elemente_stabla(stablo *glava){
+    std::cout << "\nNaziv: " << glava->naziv << "\n";
+    std::cout << "Proizvodac: " << glava->proizvodac << "\n";
+    std::cout << "Cijena: " << glava->cijena << "\n";
+    std::cout << "Sifra: " << glava->sifra << "\n\n";
+}
+
+void ispisi_stablo(stablo *glava){
+    static stablo *korijen = glava; //staticni inicijaliziraj korijen
+
+    if(glava == nullptr) return; //ako je glava nullptr, tj stablo je prazno, breakaj func
+
+    ispisi_stablo(glava->lijevi); //rekurzivni poziv na lijevi (manju) stranu stabla -- vise manje ides sve dok lijevoga nema vise
+
+    if(glava != korijen) ispisi_elemente_stabla(glava); //ako glava, tj vrijednost prosljedena funkciji nije korijen (prvi element stabla) pisi
+    ispisi_stablo(glava->desno); //rekurzivni poziv na desno -- polagano ides na desno od skroz lijevo
+}
 
 int main(){
     int izbor = 0;
@@ -149,7 +208,7 @@ int main(){
             case 1: dodaj_kraj(gl_lista); break;
             case 2: dodaj_pocetak(gl_lista); break;
             case 3: brisanje(gl_lista); break;
-            case 4: /*kopiraj(gl_lista, gl_stablo);*/ break;
+            case 4: kopiraj(gl_lista, gl_stablo); ispisi_stablo(gl_stablo); break;
             case 9: break;
             default: std::cout << "\nPogresan unos...\n";
         }

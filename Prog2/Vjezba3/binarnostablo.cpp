@@ -51,7 +51,7 @@ void ispis_uzlazno(stablo *glava){
     if (glava == nullptr) return;
     ispis_uzlazno(glava->lijevo); //rekurzivni poziv koji ide na lijevi cvor
 
-    if (glava != korijen) std::cout << glava->broj << ", ";
+    if (glava != korijen) std::cout << glava->broj << " ";
     ispis_uzlazno(glava->desno); //rekurzivni poziv koji ide na desni cvor
 }
 
