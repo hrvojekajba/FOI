@@ -29,37 +29,46 @@ void unos(){
     datoteka.clear();
 }
 
-void unos_provjera(){
-    std::fstream datoteka("podatci.dat", std::ios::in | std::ios::app | std::ios::binary); //otvori datoteku u modu za citanje i dodavanje na kraj
-    slog element; //inicijaliziraj element ZA CITANJE
-    slog element_unos; //element za unos
-    bool pronaden = false;
+bool provjera(char ime[] ,int sifra){
+    std::fstream datoteka(ime, std::ios::in | std::ios::binary);
+    slog element;
 
-    std::cout << "\n---UNOS---\n"; //pocetak unosa -- koristi element_unos
-    vrijeme_pocetak();
-    std::cout << "Sifra: "; std::cin >> element_unos.sifra; std::cin.ignore();
-    std::cout << "Ime i prezime autora: "; std::cin.getline(element_unos.prez_ime, 50);
-    std::cout << "Naslov dijela: "; std::cin.getline(element_unos.naslov, 50);
-    vrijeme_kraj();
-    element_unos.vrijeme = vrijeme_proteklo();
-    std::cout << "----------\n"; //kraj unosa
-
-    std::cout << "\n";
-    while(true){ //iteriraj do kraja
-        datoteka.read((char*)&element, sizeof(element)); //procitaj element -- NE ELEMENT_UNOS
+    while(true){
+        datoteka.read((char*)&element, sizeof(element));
         if(datoteka.eof()) break;
-        if (element.sifra == element_unos.sifra) pronaden = true; break; //ako pronades, postavi pronaden i breakaj
+        if(element.sifra == sifra){
+            datoteka.close();
+            datoteka.clear();
+            return false;
+        }
     }
-
-    if(pronaden){
-        std::cout << "Ne mogu upisati stavku, vec postoji element s tom sifrom\n\n";
-    }else{
-        datoteka.write((char*)&element_unos, sizeof(element_unos));
-    }
-
-    //zatvori datoteku
     datoteka.close();
     datoteka.clear();
+    return true;    
+}
+
+void unos_provjera(){
+    char ime[50] = "podatci.dat";
+    std::fstream datoteka(ime, std::ios::app | std::ios::binary); //otvori datoteku u modu za dodavanje na kraj
+    slog element;
+
+    std::cout << "\n---UNOS---\n"; //pocetak unosa
+    vrijeme_pocetak();
+    std::cout << "Sifra: "; std::cin >> element.sifra; std::cin.ignore();
+    std::cout << "Ime i prezime autora: "; std::cin.getline(element.prez_ime, 50);
+    std::cout << "Naslov dijela: "; std::cin.getline(element.naslov, 50);
+    vrijeme_kraj();
+    element.vrijeme = vrijeme_proteklo();
+    std::cout << "----------\n\n"; //kraj unosa
+
+    if(provjera(ime, element.sifra)){
+        datoteka.write((char*)&element, sizeof(element));
+        datoteka.close();
+        datoteka.clear();
+        return;
+    }else{
+        std::cout << "Vec postoji stavka s tom sifrom\n"; return;
+    }
 }
 
 void ispis(){
