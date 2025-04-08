@@ -14,7 +14,8 @@ struct element{
 void unos(){
     fstream datoteka("podatci.dat", ios::app | ios::binary);
     element stavka;
-    static double aritmeticka = 0;
+    //koristi static -- zapamti se vrijednost cak i kad se izade iz funkcije
+    static double aritmeticka = 0; 
     static int n = 0;
 
     cout << "\n---UNOS---\n";
@@ -39,7 +40,7 @@ bool provjera(int sifra){
     fstream datoteka("podatci.dat", ios::in | ios::binary);
     element stavka;
 
-    while(true){
+    while(true){ //iterira kroz datoteku sve dok ne nade trazeni element, ili dode do kraja
         datoteka.read((char*)&stavka, sizeof(stavka));
         if(datoteka.eof()) break;
         if(stavka.maticni == sifra){
@@ -129,15 +130,15 @@ void pretrazivanje(){
             cout << "Vrijeme unosa stavke: " << stavka.vrijeme_unosa/1000 << "s" << endl;
             cout << "Redni broj stavke: " << redni << endl;
             cout << "-------------\n\n";
-            pronaden = true;
+            pronaden = true; //ako ga je pronaslo, postavi pronaden ko true
         }
-        redni++;
+        redni++; //prati na kojoj si stavci
     }
     if(pronaden){
         datoteka.close();
         datoteka.clear();
     }else{
-        cout << "Element nije pronaden\nBroj elemenata u listi: " << redni << endl;
+        cout << "Element nije pronaden\nBroj elemenata u listi: " << redni << endl; //ako nije pronaden ispise ukupan broj stavaka
         datoteka.close();
         datoteka.clear();
     }
