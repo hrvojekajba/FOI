@@ -33,6 +33,7 @@ void rucni_unos(char maticna[], char indeksna[]){
     if(!dat){ //provjerava ako datoteka maticna postoji
         brojac_zapisa = 0;
         dat.open(maticna, ios::out | ios::binary); //ako ne postoji stvara datoteku maticnu
+        ind.open(indeksna, ios::out | ios::binary); //stvara i indeksnu
     }else{ //datoteka postoji
         dat.seekg(0, ios::end); //pokazivac citanja se postavlja na kraj datoteke
         brojac_zapisa = dat.tellg() / sizeof(tpredmet); //broj zapisa je adresa na kojoj je pokazivac citanja / velicinu predmeta
@@ -40,6 +41,7 @@ void rucni_unos(char maticna[], char indeksna[]){
         dat.open(maticna, ios::out | ios::in | ios::ate | ios::binary);
         ind.open(indeksna, ios::out | ios::in | ios::ate | ios::binary);
     }
+    
     brojac_zapisa++;
     cout << "\nZapis broja: " << brojac_zapisa << endl;
     element.rb_zapisa = brojac_zapisa;
@@ -75,7 +77,6 @@ int main(){
                 char izbor;
                 cout << "\nZelite li sami zadati ime datoteka[Y/N]: "; cin >> izbor;
                 if(izbor == 'Y'){
-                    
                     cin.ignore();
                     cout << "Unesite ime maticne datoteke: "; cin.getline(maticna, 50);
                     cout << "Unesite ime indeksne datoteke: "; cin.getline(indeksna, 50);
