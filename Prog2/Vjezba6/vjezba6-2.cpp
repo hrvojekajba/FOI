@@ -31,8 +31,6 @@ void rucni_upis(char maticna[], char indeksna[]){
     redni_broj = dat.tellg() / sizeof(telement);
     redni_broj++;
 
-
-
     cout << "\nRedni broj zapisa: " << redni_broj << endl;
     element.redni_broj = redni_broj;
     cout << "Unesite sifru: "; cin >> element.sifra; cin.ignore();
