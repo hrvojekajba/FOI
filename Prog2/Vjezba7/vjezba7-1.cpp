@@ -42,10 +42,11 @@ void status_datoteke(inventar_lista *glava){
     }
 
     if(glava && glava->sljedeci == NULL){
-        cout << "4. Vezana lista je prazna\n\n";
+        cout << "4. Vezana lista je prazna\n";
     }else if(glava){
-        cout << "4. Vezana lista nije prazna\n\n";
+        cout << "4. Vezana lista nije prazna\n";
     }
+    cout << "\n";
 }
 
 //kreiranje datoteke i alokacija vezane liste
@@ -161,10 +162,11 @@ int main(){
             case 1:
                 kreiraj(glava); break;
             case 2:
-                unos();
+                unos(); break;
             case 3:
-                kopiranje(glava);
+                kopiranje(glava); break;
             case 4:
+                ispis(glava); break;
             case 9:
                 break;
             default:
