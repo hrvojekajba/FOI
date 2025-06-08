@@ -97,4 +97,13 @@
 - Za svaku inačicu izračunava se zbroj svih brojeva pridruženih objektima na temelju rangiranja svakog donositelja odluke (tj. frekventnost pojave po različitim rangovima)
 
 
-### **ProACT i metoda ekvivalentnih zamjena**
+### **PrOACT i metoda ekvivalentnih zamjena**
+- **PrOACT pristup odlučivanju** - "metoda" za donošenje kvalitetnih odluka sustavskim pristupom
+- **Elementi PrOACT-a**:
+1. Problem (eng. ***Pr***oblem)
+2. Ciljevi (eng. ***O***bjectives)
+3. Alternative (eng. ***A***lternatives)
+4. Posljedice (eng. ***C***onsequences)
+5. Zamjene (eng. ***T***radeoffs)
+
+### **OSTALO SU RAČUNSKI ZADATCI - UČI IH PO EXCELU I PRIMJERIMA**
