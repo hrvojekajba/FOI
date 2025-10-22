@@ -42,6 +42,7 @@ void prekidna_rutina(int sig) {
 
   // odredi razinu prekida
   razina_prekida();
+
   // helper varijabla
   int x = 1;
 
