@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PO/Drugi kolokvij - skripta.md",
+                "file": "S3/OS/Vjezba-1/Vježba 1 - bilješke.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Drugi kolokvij - skripta"
+              "title": "Vježba 1 - bilješke"
             }
           }
         ]
@@ -157,6 +157,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -167,6 +168,8 @@
   },
   "active": "54f1e8954541598d",
   "lastOpenFiles": [
+    "README.md",
+    "S3/OS/Vjezba-1/Vježba 1 - bilješke.md",
     "Pasted image 20250608191854.png",
     "PO/Drugi kolokvij - skripta.md",
     "PO",
