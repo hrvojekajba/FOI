@@ -16,12 +16,15 @@ void vrijeme_prekida() {
 }
 
 void razina_prekida() {
-    int razina = 8;
+    int razina = 0;
 
     do {
         printf("Razina prekida: ");
-        scanf("%d", &razina);
-    } while (razina > 7 || razina < 0);
+        if (scanf("%d", &razina) != 1) {
+            scanf("%*[^\n]");
+            razina = 0;
+        }
+    } while (razina > 7 || razina <= 0);
     printf("\n");
 
     OZNAKA_CEKANJA[razina] = 1;
