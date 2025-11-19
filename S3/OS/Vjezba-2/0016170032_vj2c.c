@@ -17,7 +17,6 @@ void kriticki_odsjecak(int broj_dretve, int i) {
 void izlaz_kriticki(int prva_dretva, int druga_dretva) {
     PRAVO = druga_dretva;
     ZASTAVICE[prva_dretva] = 0;
-    ZASTAVICE[druga_dretva] = 1;
 }
 
 void ulaz_kriticki(int prva_dretva, int druga_dretva, int i) {
