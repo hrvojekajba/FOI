@@ -31,9 +31,11 @@ int izracunaj_broj_procesa(int broj_elementa, int velicina_dijela) {
 
 int main() {
     // odredi broj elemenata i velicinu logickih dijelova
-    int broj_elemenata, velicina_dijela;
-    printf("\nUnesite broj elemenata polja i velicinu dijelova polja: ");
-    scanf("%d %d", &broj_elemenata, &velicina_dijela);
+    int broj_elemenata = 10001, velicina_dijela;
+    while (broj_elemenata > 10000) {
+        printf("\nUnesite broj elemenata polja i velicinu dijelova polja: ");
+        scanf("%d %d", &broj_elemenata, &velicina_dijela);
+    }
 
     // stvori polje i spremi ga u zajednicku memoriju
     int *glavno_polje;
@@ -47,7 +49,7 @@ int main() {
     glavno_polje = (int *)shmat(shmid, NULL, 0);
     srand(time(NULL));
     for (int i = 0; i < broj_elemenata; i++)
-        glavno_polje[i] = rand() % 10000;
+        glavno_polje[i] = rand() % 100;
 
     // ispisi polje
     printf("\n");
