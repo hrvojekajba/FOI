@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "059c0caaccfe7bd9",
+        "id": "b876719f33add543",
         "type": "tabs",
         "children": [
           {
-            "id": "1ae3d6fffed8d437",
+            "id": "602c9158a6269c8a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "S3/OS/Teorija/Prvi kolokvij.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Prvi kolokvij"
             }
           }
         ]
@@ -162,10 +166,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1ae3d6fffed8d437",
+  "active": "602c9158a6269c8a",
   "lastOpenFiles": [
-    "S3/OS/Vjezba-1/vježba1-biljeske.md",
+    "S3/OS/Teorija/Prvi kolokvij.md",
     "README.md",
+    "S3/OS/Vjezba-1/vježba1-biljeske.md",
     "Pasted image 20250608191854.png",
     "PO/Drugi kolokvij - skripta.md",
     "PO",
