@@ -48,4 +48,5 @@ U svakom koraku se prvi element nesortiranog dijela prebacuje u sortirani dio na
 - Kreće se od posljednjeg elementa u sortiranom dijelu
 - Ako je njegova vrijednost veća od vrijednosti u privremenoj varijabli, prvi element iz nesortiranog dijela se prepisuje u sljedeći element
 - Kada dođe do elementa sortiranog dijela koji je manji, ili kada su premješteni svi elementi sortiranog dijela, vrijednost se pomoćne varijable zapisuje iza njegova
+
 Algoritam završava kada se svi elementi polja nalaze u sortiranom dijelu.
