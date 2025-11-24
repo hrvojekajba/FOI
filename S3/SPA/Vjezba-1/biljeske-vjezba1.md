@@ -43,6 +43,7 @@ void selection_sort(int polje[], int velicina) {
 ### 1.3. Insertion sort (sortiranje umetanjem)
 
 Algoritam dijeli polje na dva dijela; sortirani i nesortirani. Na početku se u sortiranom dijelu nalazi prvi element (index 0), a u nestortiranom svi ostali.
+
 U svakom koraku se prvi element nesortiranog dijela prebacuje u sortirani dio na sljedeći način:
 - Vrijednost prvog elementa sortiranog dijela se stavlja u privremenu varijablu
 - Kreće se od posljednjeg elementa u sortiranom dijelu
@@ -50,3 +51,21 @@ U svakom koraku se prvi element nesortiranog dijela prebacuje u sortirani dio na
 - Kada dođe do elementa sortiranog dijela koji je manji, ili kada su premješteni svi elementi sortiranog dijela, vrijednost se pomoćne varijable zapisuje iza njegova
 
 Algoritam završava kada se svi elementi polja nalaze u sortiranom dijelu.
+
+```cpp
+void insertion_sort(int polje[], int velicina) {
+    for (int i = 0; i < velicina; i++) {
+        int kljuc = polje[i];
+        int j = i - 1;
+        
+        while (j >= 0 && polje[j] > kljuc) {
+            polje[j+1] = polje[j];
+            j--;
+        }
+        
+        polje[j+1] = kljuc;
+    }
+}
+```
+
+### 1.4. Bubblesort (mjehuričasto sortiranje)
