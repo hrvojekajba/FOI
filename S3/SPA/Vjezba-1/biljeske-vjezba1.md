@@ -68,6 +68,8 @@ void insertion_sort(int polje[], int velicina) {
 }
 ```
 
+\pagebreak
+
 ### 1.4. Bubblesort (mjehuričasto sortiranje)
 
 Algoritam sortira polje tako da zamjenjuje susjedne elemente polja ako je jedna od njihovih vrijednost veća od druge. Nakon prve iteracije polja algoritmom, najveća vrijednost polja se nalazi na kraju. Slično tome, nakon druge iteracije je druga najveća vrijednost na predzadnjoj poziciji, itd.
