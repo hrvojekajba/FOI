@@ -22,5 +22,3 @@ void exchange_sort(int polje[], int velicina) {
 ````
 
 test
-```
-```
