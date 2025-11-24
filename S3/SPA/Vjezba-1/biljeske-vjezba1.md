@@ -69,3 +69,25 @@ void insertion_sort(int polje[], int velicina) {
 ```
 
 ### 1.4. Bubblesort (mjehuričasto sortiranje)
+
+Algoritam sortira polje tako da zamjenjuje susjedne elemente polja ako je jedna od njihovih vrijednost veća od druge. Nakon prve iteracije polja algoritmom, najveća vrijednost polja se nalazi na kraju. Slično tome, nakon druge iteracije je druga najveća vrijednost na predzadnjoj poziciji, itd.
+
+```cpp
+void bubble_sort(int polje[], int velicina) {
+    bool zamjenjeno;
+    
+    for (int i = 0; i < velicina; i++) {
+        zamjenjeno = false;
+        for (int j = 0; j < velicina - i - 1; j++) {
+            if (polje[j] > polje[j + 1]) {
+                int temp = polje[j]; 
+                polje[j] = polje[j + 1];
+                polje[j + 1] = temp;
+                zamjenjeno = true;
+            }
+        }
+        if (!zamjenjeno)
+            break;
+    }
+}
+```
