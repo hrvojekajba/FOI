@@ -68,7 +68,6 @@ void insertion_sort(int polje[], int velicina) {
 }
 ```
 
-\pagebreak
 
 ### 1.4. Bubblesort (mjehuričasto sortiranje)
 
