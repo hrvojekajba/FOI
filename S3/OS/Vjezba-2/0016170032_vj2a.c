@@ -1,3 +1,5 @@
+#include <limits.h>
+#include <signal.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/ipc.h>
@@ -6,7 +8,18 @@
 #include <unistd.h>
 #include <wait.h>
 
-void odredi_sumu(int p, int broj_procesa, int broj_elemenata, int velicina_dijela, int glavno_polje[]) {
+// globalne varijable
+int *glavno_polje;
+int shmid;
+
+void brisi(int sig) {
+    shmdt((void *)glavno_polje);
+    shmctl(shmid, IPC_RMID, NULL);
+    exit(0);
+}
+
+void odredi_sumu(int p, int broj_procesa, int broj_elemenata,
+                 int velicina_dijela, int glavno_polje[]) {
     // odredi pocetak i kraj segmenta
     int pocetak = p * velicina_dijela;
     int kraj = pocetak + velicina_dijela - 1;
@@ -37,9 +50,10 @@ int main() {
         scanf("%d %d", &broj_elemenata, &velicina_dijela);
     }
 
+    // zadaj id zajednickog prostora
+    shmid = shmget(IPC_PRIVATE, sizeof(int) * broj_elemenata, 0600);
+
     // stvori polje i spremi ga u zajednicku memoriju
-    int *glavno_polje;
-    int shmid = shmget(IPC_PRIVATE, sizeof(int) * broj_elemenata, 0600);
     if (shmid == -1) {
         printf("ERROR: nema zajednicke memorije\n");
         exit(1);
@@ -60,13 +74,20 @@ int main() {
     int broj_procesa = izracunaj_broj_procesa(broj_elemenata, velicina_dijela);
     printf("\nBroj procesa: %d\n\n", broj_procesa);
 
+    // signal handler za brisanje zajednicke memorije
+    struct sigaction sigac = {};
+    sigac.sa_handler = brisi;
+    sigaction(SIGINT, &sigac, NULL);
+
     // pokreni procese
     for (int p = 0; p < broj_procesa; p++) {
+        sleep(2);
         pid_t pid = fork();
 
         // obradi dijete proces
         if (pid == 0) {
-            odredi_sumu(p, broj_procesa, broj_elemenata, velicina_dijela, glavno_polje);
+            odredi_sumu(p, broj_procesa, broj_elemenata, velicina_dijela,
+                        glavno_polje);
             shmdt((void *)glavno_polje);
             exit(0);
         }
@@ -76,8 +97,7 @@ int main() {
     for (int i = 0; i < broj_procesa; i++)
         wait(NULL);
 
-    shmdt((void *)glavno_polje);
-    shmctl(shmid, IPC_RMID, NULL);
+    brisi(0);
 
     return 0;
 }
