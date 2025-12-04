@@ -13,9 +13,11 @@ int *glavno_polje;
 int shmid;
 
 void brisi(int sig) {
-    printf("\nBrisem zajednicku memoriju i izlazim iz programa...\n");
+    printf("\n\nUhvacen SIGINT!\n");
     shmdt((void *)glavno_polje);
-    shmctl(shmid, IPC_RMID, NULL);
+    if (shmctl(shmid, IPC_RMID, NULL) != -1)
+        printf("Izbrisan zajednicki prostor...\n");
+    printf("Izlazim iz programa...\n\n");
     exit(0);
 }
 
