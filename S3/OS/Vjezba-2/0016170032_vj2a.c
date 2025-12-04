@@ -13,6 +13,7 @@ int *glavno_polje;
 int shmid;
 
 void brisi(int sig) {
+    printf("\nBrisem zajednicku memoriju i izlazim iz programa...\n");
     shmdt((void *)glavno_polje);
     shmctl(shmid, IPC_RMID, NULL);
     exit(0);
@@ -81,6 +82,7 @@ int main() {
 
     // pokreni procese
     for (int p = 0; p < broj_procesa; p++) {
+        sleep(1);
         pid_t pid = fork();
 
         // obradi dijete proces
