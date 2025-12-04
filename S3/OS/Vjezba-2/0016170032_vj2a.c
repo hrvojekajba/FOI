@@ -81,7 +81,6 @@ int main() {
 
     // pokreni procese
     for (int p = 0; p < broj_procesa; p++) {
-        sleep(2);
         pid_t pid = fork();
 
         // obradi dijete proces
