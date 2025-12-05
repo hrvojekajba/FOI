@@ -47,7 +47,7 @@ int izracunaj_broj_procesa(int broj_elementa, int velicina_dijela) {
 int main() {
     // odredi broj elemenata i velicinu logickih dijelova
     int broj_elemenata = 10001, velicina_dijela;
-    while (broj_elemenata > 10000) {
+    while (broj_elemenata <= 0 || broj_elemenata > 10000) {
         printf("\nUnesite broj elemenata polja i velicinu dijelova polja: ");
         scanf("%d %d", &broj_elemenata, &velicina_dijela);
     }
