@@ -36,8 +36,7 @@ U praksi bi stvaranje novog procesa trebalo kopirati sve postojeće dretve u 'di
 Sve dretve, osim prve i glavne, nastaju pozivanjem sustavskog poziva `pthread_create`.
 
 ```cpp
-int pthread_create(pthread_t *thread, const pthread_attr_t *attr,
-    void *(start_routine)(void *), void *arg);
+int pthread_create(pthread_t *thread, const pthread_attr_t *attr, void *(start_routine)(void *), void *arg);
 ```
 
 `thread` je kazaljka na mjesto gdje se u memoriji sprema ID novonastale dretve, `addr` je adresa strukture koja sadrži podatke o atributima s kojom želi stvoriti dretvu (ako se za `addr` postavi NULL, onda se uzimaju pretpostavljene vrijednosti). `start_routine` predstavlja pokazivač na funkciju koju će novonastala dretva imati kao početnu, a `arg` je adresa parametra koji se dretvi prenosi - može biti NULL.
