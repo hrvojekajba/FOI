@@ -74,7 +74,7 @@ int main() {
     pthread_create(&dretve[0], NULL, dakker_algo, &brojevi_dretva[0]);
     pthread_create(&dretve[1], NULL, dakker_algo, &brojevi_dretva[1]);
 
-    // pokrecemo dretve
+    // cekaj izvrsenje
     pthread_join(dretve[0], NULL);
     pthread_join(dretve[1], NULL);
 
