@@ -15,7 +15,7 @@ int shmid;
 void brisi(int sig) {
     shmdt((void *)glavno_polje);
     if (shmctl(shmid, IPC_RMID, NULL) != -1)
-        printf("Izbrisan zajednicki prostor...\n");
+        printf("\nIzbrisan zajednicki prostor...\n");
     printf("Izlazim iz programa...\n\n");
     exit(0);
 }
