@@ -120,12 +120,12 @@ Na temelju metodoloških istraživanja i praktičnih iskustava razvijene su *met
 Metodika je uređen skup načela, pristupa, pravila, činjenica, obrazaca, metoda i tehnika rješavanja nekog zadatka. Ona je također normativni i preskriptivni obrazac za rješavanje posla te je i formalizirana apstrakcija razvojnog poduhvata.
 
 #### 3.1.1. Struktura metodike - pristupi
+
 **Pristup (paradigma)** je skup početnih pretpostavki o objektu projektiranja i skup općih načela, koja proizlaze iz pojedinih znanstvenih teorija ili iskustva.
 
 Pristupi određuju svrhu, ulogu, strukturu, ponašanje, način razvoja ili korištenja informacijskog ili programskog sustava, njegov odnos s okolinom i sl.
 
 #### 3.1.2. Struktura metodike - načela
-
 - Kakva je *uloga znanosti i struke u projektiranju*? (inženjerske pristup)
 - Kakva je *uloga informacijskog sustava*? (preslikavanje organizacije, upravljanje organizacijom)
 - Kakva je *namjena sustava*? (obrada transakcija, podrška u odlučivanju, podrška uredskog rada...)
@@ -141,3 +141,95 @@ Pristupi određuju svrhu, ulogu, strukturu, ponašanje, način razvoja ili kori�
 *Proces razvoja informacijskog sustava* je skup međusobno povezanih aktivnosti, koje se izvode tijekom razvojnog ciklusa. Stvarni se razvojni poduhvati izvode u skladu s odabranim obrascem procesa razvoja, koji su propisani ili preporučeni metodikom razvoja.
 
 #### 3.1.4. Struktura metodike - metode i tehnike
+**Tehnika** je skup praktičnih postupaka i vještina primjene zadane metode i obavljanja posla u konkretnoj situaciji.
+
+*Osnovne metode i tehnike* u fazi projektiranja su modeliranje, a u fazi konstrukcije su programiranje.
+
+*Metoda* - teorija načina primjene teorije
+*Tehnika* - praksa primjene, vještina
+
+#### 3.1.5. Struktura metodike - koncepti i metamodeli
+*Modeli sustava* oblikuju se i izrađuju pomoću **koncepata**, od kojih je svaki na nekoj apstraktnoj razini reprezentira određeno svojstvo predmeta modeliranja.
+
+**Metamodel** je skup svih koncepata i načina njihove primjene, u okviru neke metode ili tehnike modeliranja. To je model svih mogućih modela koje možemo izraditi pomoću koncepata neke metode i tehnike.
+
+### 3.2. Model
+**Model** je eksplicitna interpretacija nečijeg shvaćanja situacije, ili samo predodžbe situacije. Može biti izražen matematički, riječima ili simbolički, ali iznad svega mora biti koristan.
+
+Vrste modela:
+
+- **Slikovni** - slikovna predodžba predmeta, smanjenih, stvarnih ili povećanih dimenzija
+- **Analogni** - neka svojstva originala u istom ili drugom fizičkom mediju
+- **Matematički**
+- **Konceptualni** - opis *kvalitativnih* aspekata područja od interesa ili pojave skupom dogovorenih koncepata (poznata simbolika, sintaksa i semantika)
+
+Svojstva modela:
+
+- **Verbalni modeli** sadrže opis sustava s komentarom na prirodnom jeziku
+- **Fizički modeli** su povećane ili smanjene replike fizičkog sustava, izrađeni su u jednakom ili različitom fizičkom mediju u odnosu na original, a oponašaju funkciju i ponašanje sustava
+- **Grafički modeli** prikazuju neka svojstva originala u formi slike, crteža ili dijagrama
+- **Formalni modeli** su modeli kod kojih su svojstva originala prikazana matematičkih ili logičkim relacijama.
+
+Mjesto modela:
+
+- **Unutarnji (interni)** modeli su uključeni u sustav i dio su njegove strukture
+- **Vanjski (eksterni)** modeli su izvan strukutre sustava
+
+### 3.3. Veze metoda, tehnika i modela
+Metode mogu biti opće (npr. apstrakcija, generalizacija, klasifikacija i sl.) ili posebne (strukturna analiza sustava, modeliranje ponašanja i sl.). Metode i tehnike projektiranja čvrsto su povezane, tako da se ta dva pojma često koriste kao sinonimi (npr. metoda entiteti-veza i tehnika entiteti-veza).
+
+Tehnike se više vežu uz primjenu metoda. Tako govorimo o **dijagramskim tehnikama** (npr. oblikovanje dijagrama primjenom određene notacije, na temelju znanstvene metode), **tehnikama izrade specifikacija** (primjena specifikacijskog jezika određene sintakse i semantike), **tehnikama grupnog rada** s korisnicima i sl.
+
+Projektiranje informacijskih i programskih sustava je **modeliranje**. Tijekom aktivnosti projektiranja izrađuju se modeli predmeta projektiranja uz pomoć različitih metoda i tehnika modeliranja.
+
+## 4. Razvojni ciklus informacijskog sustava
+### 4.1. Razvojni ciklus
+**Razvojni ciklus** informacijskog sustava ili podsustava je vremensko razdoblje između donošenja formalne odluke o razvoju i formalne isporuke ili formalnog prekida razvoja.
+
+Rezultat samog razvoja je ciljni proizvod, tj. određeni tip, varijanta ili generacija primjenjivog proizvoda. Rezultat svake faze razvojnog ciklusa je cjelovit, prepoznatljiv i provjerljiv model ili proizvod, koji se primjenjuje u sljedećoj fazi.
+
+Svaki stvarni poduhvat razvoja informacijskog ili programskog sustava odvija se u skladu s nekakvim *predloškom* (modelom, obrascem, uzorkom), koji mora biti unaprijed opisan, te usklađen i prihvaćen od strane korisnika i projektanta.
+
+Za neki stvarni poduhvat razvoja, predložak razvojnog ciklusa preuzima se doslovno iz odabrane metodike razvoja ili djelomično prilagođava stvarnim potrebama.
+
+Predložak razvojnog ciklusa uvijek sadrži:
+
+- **podjelu razvojnog ciklusa na faze**
+- **opis mogućeg slijeda faza**
+- **uvjete prelaska s jedne faze razvoja na drugu**
+
+### 4.2. Strategijsko planiranje informacijskog sustava
+Izrađuje se grubi konceptualni model postojećih procesa i podataka organizacijskog sustava, te model postojećeg informacijskog sustava.
+
+Poslovodstvo aktivno sudjeluje u definiranju modela poslovnog sustava, što uključuje *model ciljeva, model ključnih čimbenika uspjeha, model kritičnih pretpostavki, model problema i model potreba za informacijama te drugih zahjteva prema IS-u...*
+
+Na temelju analize ovih modela određuje se: *gruba struktura informacijskog sustava, prioriteti i redoslijed realizacije podsustava i okvirni troškovi i izvodljivost.*
+
+Rezultat je strategijski plan informacijskog sustava, s planskim obzorom 3 do 5 godina.
+
+### 4.3. Utvrđivanje izvodljivosti poduhvata
+Cilj je utvrđivanje granica (opsega) i izvodljivosti planiranog poduhvata razvoja s tehničkih, tehnoloških, organizacijskih, ekonomskih i drugih gledišta.
+
+Postoji više razina studije izvodljivosti i pratećih studija: *studija mogućnosti (opportunity), prethodna studija izvodljivosti (prefeasability), studija izvodljivosti (feasability) i studije potpore (support studies).*
+
+Granice poduhvata se utvrđuju na grubom konceptualnom modelu podataka i procesa.
+
+Rezultat je: **studija izvodljivosti, projektni zadatak budućeg poduhvata razvoja i eventualno natječajna dokumentacija.**
+
+### 4.4. Analiza i specifikacija zahtjeva
+U ovoj fazi se profinjava model podataka i procesa, odnosno objektni model. Detaljno se analiziraju i specificiraju zahtjevi prema budućem sustavu, koji se odnose na: *podatkovne sadržaje, funkcionalnost i tehnologiju rada, sučelje, odaziv, performanse i ostale oblike ponašanja i ostale nefunckionalne zahtjeve.*
+
+### 4.5. Logičko modeliranje
+Ova faza obuhvaća izradu detaljnog logičkog modela budućeg sustava, koji opisuje što on mora biti. U strukturnim tehnikama to znači: *dekompoziciju procesa, dijagrame toka podataka i opise unutarnje logike elementarnih procesa i model entitet-veze, njegovu pretvorbu u relacijski model i relacijsku analizu.*
+
+U objektno orijentiranim tehnikama (npr. UML) to znači:
+
+- specifikacija slučajeva korištenja i opis njihove unutarnje logike dijagramima aktivnosti
+- izrada strukturnih modela (dijagrama klasa i podataka)
+- opis dinamike objekta (strojevi stanja)
+- specificiranje poruka (dijagrami slijeda i komunikacije)
+
+### 4.6. Fizičko modeliranje i izrada
+U ovoj fazi izrađuje se fizički model baze podataka (tablice, ključevi, indeksi, distribucija i replikacija), definiriaju se programski moduli i njihova distribucija, konstruiraju se programi, detaljno se razrađuju uloge korisnika i pogledi, detaljno se razrađuje sustav autorizacije korisnika i sigurnosti, detaljne se oblikuje sučelje, testiraju se pojedini moduli, moduli se integriraju i testira se cijelina, model se dokumentira i pojedini dijelovi i sustav u cjelini se validiraju s korisnicima.
+
+### 4.7. Isporuka i primjena
