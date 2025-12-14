@@ -233,3 +233,167 @@ U objektno orijentiranim tehnikama (npr. UML) to znači:
 U ovoj fazi izrađuje se fizički model baze podataka (tablice, ključevi, indeksi, distribucija i replikacija), definiriaju se programski moduli i njihova distribucija, konstruiraju se programi, detaljno se razrađuju uloge korisnika i pogledi, detaljno se razrađuje sustav autorizacije korisnika i sigurnosti, detaljne se oblikuje sučelje, testiraju se pojedini moduli, moduli se integriraju i testira se cijelina, model se dokumentira i pojedini dijelovi i sustav u cjelini se validiraju s korisnicima.
 
 ### 4.7. Isporuka i primjena
+U ovom procesu se instalira oprema i programi potrebni za IS, osposobljavaju se korisnici (edukacija radnika), obavlja se konverzija i integracija podataka, testira se prihvatljivost sustava tijekom razdoblja probnog rada, po potrebi se obavljaju određene korektivne aktivnosti i daje se ocjena prihvatljivosti.
+
+### 4.8. Održavanje i poboljšavanje
+U ovom procesu se pružaju različiti oblici podrške korisnicima, otklanjaju se uočene greške u funkciji ili ponašanju, sustav se prilagođava novim izdanjima operacijskog sustava, poboljšanjima i proširenjima opreme, novim komunikacijskim mogućnostima i sl., također se sustav prilagođava promjenama poslovnih pravila, poslovnih tehnologija, zakona i sl., poboljšavaju se performanse sustava, u određenoj mjeri se proširuje funkcionalnost sustava, te se sustav primjenjuje novim lokacijama, prihvaćaju se novi korisnici i sl.
+
+### 4.9. PDCA (Plan-Do-Act-Check)
+**PDCA** je iterativna metoda upravljanja razvojem i kontinuiranim poboljšanjem procesa i proizvoda koja se sastoji od 4 korake (faze): *plan, do, act, check*.
+
+### 4.10. Pristupi s obzirom na razvojni ciklus
+Najkorišteniji i najpoznatiji pristupi su: *vodopadni pristup, fazni pristup, evolutivni prototipni pristup, djelomično inkrementalni pristup, inkrementalni pristup, spiralni pristup i agilni pristup*.
+
+Najkorišteniji od ovih u modernom razvoju je agilni pristup.
+
+### 4.11. Životni ciklus informacijskog sustava
+**Životni ciklus** informacijskog sustava formalno započinje s uspostavom organizacijskog sustava kojem IS pripada, a prestaje s prestankom rada organizacije.
+
+Životni ciklus u užem smislu označava vremensko razdoblje između donošenja formalne odluke o izgradnji sustava bitno različite građe, tehnologije, funkcionalnosti i sl., u odnosu na postojeć sustav, a završava odlukom o zamjeni sustava novim sustavom.
+
+## 5. Proces razvoja informacijskog sustava
+### 5.1. Proces razvoja
+U funkcionalnom smislu, svaki poduhvat razvoja informacijskog sustava je proces (traje i troši resurse).
+
+**Proces razvoja informacijskog sustava** je skup međusobno povezanih aktivnosti, koje se izvode tijekom razvojnog ciklusa. Aktivnosti se, unutar procesa razvoja, izvode vremenski slijedno (sljedeća aktivnost započinje nakon završetka prethodne), vremenski usporedno ili ciklički (nakon završetka neke od sljedećih aktivnosti, vraća se na prethodnu).
+
+Stvarni se razvojni poduhvati izvode u skladu s odabranim obrascem procesa razvoja, koji je propisan ili preporučen metodikom razvoja.
+
+### 5.2. Predložak (obrazac) procesa razvoja
+Predložak procesa razvoja opisuje: *raščlanjivanje procesa i aktivnosti na aktivnosti niže razine, veze i slijed izvođenja aktivnosti, uvjete početka i završetka aktivnosti, uvjete početka i završteka aktivnosti, ulazne i izlazne podatke i informacije potrebne za izvođenje svake aktivnosti i metode, tehnike, pomagala i sredstva koja se koriste tijekom izvođenja neke aktivnosti.*
+
+### 5.3. Vrste aktivnosti
+S obzirom na ciljeve koji se njima ostvaruju, aktivnosti se dijele na: 
+
+- aktivnosti planiranja i upravljanja
+- aktivnosti učinka
+- aktivnosti provjere
+
+#### 5.3.1. Aktivnosti planiranja i upravljanja
+Svrha **aktivnosti planiranja** je: *zadavanje ciljeva, vodećih veličina i indikatora (vrijeme, resursi, kapaciteti) i određivanje stanja i načinu njihovih postizanja (strategija, taktika i operacije).*
+
+Svrha **aktivnostu upravljanja** je: *upravljanje drugim vrstama aktivnosti (npr. aktivnostima učinka), rezultatima aktivnosti i resursima (financijskim sredstvima, ljudskom snagom...)*.
+
+#### 5.3.2. Aktivnosti učinka
+Osnovna svrha **aktivnosti učinka** je obavljanje unaprijed određenog posla (postizanja učinka ili stanja). Svrha aktivnosti učinka očituje se u izlaznom rezultatu. U projektiranju informacijskih sustava, izlazni rezultati aktivnosti učinka su razni modeli, specifikacije ili izrađeni dijelovi informacijskih sustava.
+
+Aktivnosti učinka su:
+
+- aktivnost prikupljanja i analize informacija
+- aktivnost modeliranja
+- aktivnost programiranja
+- aktinvost izrade dokumentacije
+
+#### 5.3.3. Aktivnosti provjere
+Svrha **aktivnosti provjere** je provjeravanje i vrednovanje rezultata aktivnosti učinka, utroška resursa i vremenskog napredovanja poduhvata.
+
+Dvije osnovne vrste aktivnosti provjere su: *verificiranje* (formalno provjeravanje usklađenosti s ulaznim specifikacijama) i *validiranje* (vrednovanje od strane korisnika).
+
+## 6. Sustavni pristup razvoju IS i osnovni modeli
+### 6.1. Kibernetički pogled na sustav
+Sustav je cjelovita tvorevina koja svrhoviti djeluje u međudjelovanju s okolinom. Prema kibernetičkom pogledu, sustavom se upravlja i odlučuje na temelju podataka i informacija iz procesa.
+
+### 6.2. Sustavni pristup izgradnji IS-a
+IS je model poslovne tehnologije organizacijskog sustava: *programi automatiziraju ili podržavaju realne procese u skladu s poslovnim pravilima, a baze podataka sadrže podatke o stanjima i promjenama stanja sustava i poslovnim transakcijama.*
+
+Temelj razmatranja su **poslovni procesi**, a želimo ih držati stabilnima, kako ne bismo trebali učestalo mijenjati programe.
+
+**Podatci** su resurs poslovnog sustava i najstabilniji dio IS.
+
+IS se izgrađuje *holističkim pristupom* i integracijom podsustava na temelju *interoperabilnosti*:
+
+- poslovna
+- procesna
+- podatkovna (semantička)
+- tehnička
+
+### 6.3. Objekt modeliranja
+**Subjektivistički pristup** (TO-BE) zanemaruje važnost modeliranja sadašnjeg sustava. Prema ovom pristupu, razvoj budućeg programskog sustava odmah započinje prikupljanjem, analiziranjem i specificiranjem zahtjeva korisnika prema budućem programskom sustavu, te izradom njegovog modela.
+
+Subjektivistički pristup modeliranju orijetniran je oblikovanju novog sustava (dizajnerski pristup), a objektivistički je orijentiran analizi postojećeg (analitički pristup).
+
+**Objektivistički pristup** (AS-IS + TO-BE) polazi od objektivne stvarnosti, tj. modela sadašnjeg objektnog sustava (uključujući model sadašnjeg informacijskog i korisničkog sustava).
+
+Modeliranje postojećeg sustava zahtijeva određeni utrošak resursa, ali olakšava:
+
+- određivanje granica poduhvata
+- vrednovanje rezultata poduhvata
+- upoznavanje problemske domene
+- migraciju na novi sustav
+
+### 6.4. Poslovni model
+**Poslovni model** je skup međusobno povezanih modela koji opisuju različite aspekte poslovanja, uključujući strukturu organizacije, poslovne ciljeve i prioritete, poslovne procese i pravila, podatke i sl. Također predočava koje se vrijednosti isporičuju kupcima, kako se to čini i s kakvim (financijskim) rezultatima i kako se ta vrijednost kontinuirano održava.
+
+### 6.5. Digitrans metodologija
+#### 6.5.1. Faza analize
+*Analiza postojećeg poslovnog modela poduzeća:*
+
+- razvoj mape strateškog krajobraza
+- razvoj mape "plavog oceana"
+- izrada mape dionika
+- analiza kompetencija
+- ...
+
+*Istraživanja korisničkig potreba:*
+
+- izrada platna prijedloga vrijednosti
+- intervju
+- razvoj profila pojedinačnog kupca (*persona*)
+- korisničko putovanje
+
+##### 6.5.1.1. Razvoj mape "plavog oceana"
+Cilj je definirati trenutnu poziciju na temelju stanja na tržištu, konkurenciju, kupce a posebno na one koji bi mogli i za koje biste htjeli da vam postanu kupci u budućnosti.
+
+##### 6.5.1.2. Izrada platna prijedloga vrijednosti
+Vrijednosno platno (*value proposition canvas*) nam pomaže u shvaćanju, prepoznavanju i opisivanju potencijalnih ciljanih skupina kupaca. Izradom platna lakše se definiraju aktivnosti kupca, dobrobite ili dobitke i problemi koje kupac ima, a vaš proizvod može rješiti.
+
+##### 6.5.1.3. Razvoj profila pojedinačnog kupca
+Profil pojedinačnog kupca predstavlja idealnog kupca. Temelji se na istraživanju korisnika, npr. putem intervjua i uključuje potrebe, ciljeve i obrasce promatranog ponašanja ciljane publike.
+
+Stvara se empatija prema ciljanim skupinama/kupcima kojima će novo razvijeni digitalni poslovni model rješiti određeni problem ili zadovoljiti potrebe.
+
+#### 6.5.2. Faza dizajna
+*Kreiranje ideja i odabir rješenja:*
+
+- brainstorming
+- brainwriting
+- ...
+- odabir najbolje ideje
+
+*Prototipiranje i testiranje*:
+- prototipiranje
+- SAP scene
+- ...
+- izrada platna poslovnog modela
+
+##### 6.5.2.1. Prototipiranje i testiranje
+Svrha prototipa jest vizualizacija ideje koja se razvila na temelju istraživanja korisnika i dionika kako bi se stvorila zajednička osnova razumijevanja i rasprave.
+
+Pomaže u stvaranju ideja koje su opipljive i povratnih informacija prezentiranjem ideje uključenima u proces.
+
+### 6.6. Osnovni model tijekom razvoja IS
+Osnovne informacije bitne za razvoj informacijskog sustava su podatci i procesi objektnog sustava. Zbog toga su *modeli podataka i modeli procesa* osnovni modeli koji se izrađuju tijekom projektiranja.
+
+**Modeli procesa** su formalizirani opisi hijerarhijskih struktura procesa, unutarnje logike procesa, međusobnih odnosa procesa, događaja u objektnim sustavima, te odnosa procesa i okolice.
+
+Osnovna svrha pojedinih procesa informacijskog sustava je prikupljanje, pohranjivanje, pretraživanje, obrada i prikazivanje podataka. Da bi se ova svrha ostvarila, nužno je poznavanje i razumijevanje strukture podataka objektnog i informacijskog sustava.
+
+**Modeli podataka** prikazuju strukturu podataka, odnose među skupovima podataka i njihova ograničenja te mehanizma promjene podataka.
+
+**Modeli objekata** u semantičkom smislu objedinjavaju modele podataka i modele procesa, njihovu statiku i dinamiku.
+
+### 6.7. Izrada plana razvoja i utvrđivanje izvodljivosti
+1. Određivanje prioriteta i redoslijeda realizacije podsustava (na temelju PK matrice)
+2. Definiranje pristupa s obzirom na vlastiti razvoj i korištenje vanjskih usluga
+3. Planiranje projekta
+4. Utvrđivanje izvodljivosti planiranog poduhvata razvoja s tehničkog, tehnološkog, ekonomskog, organizacijskog i drugih gledišta.
+5. Definiranje plana nabave, projektnog zadatka i natječajne dokumentacije za proizvode i usluge koje se kupuju.
+
+### 6.8. Pristup s obzirom na odnos vlastitog razvoja i gotovih komponenata
+**Outsourcing** je način razvoja informacijskog sustava gdje organizacija naručuje od informatičke tvrtke provedbu dijela ili cijelog postupka razvoja IS-a. Prednost ovog načina je da će sustav prilagođen organizaciji i njezinom poslovanju, a nedostatak su cijena i dugo trajanje izrade.
+
+**Insourcing** je vlastiti razvoj IS-a, odnosno postojanje dovoljnog broja informatičara koji su sposobni izraditi IS za organizaciju. Prednost ovog pristupa je prilagodljivost sustava, no nedostatak je moguća smanjena učinkovitost u redovnom poslovanju.
+
+**Kupovanje gotovog rješenja** je opcija u kojoj organizacija kupi jedno od mnogobrojnih rješenja koja su dostupna na tržištu. Prednost gotovog rješenja je da se učinkovitost IS-a skoro odmah vidi, no nedostatak su cijena i potreba za prilagodbom procesa samom IS-u.
+
+**Program kao usluga** (SaaS) je pristup gdje je organizacija vlasnik podataka, a sam sustav (programi, platforma i infrastruktura) su unajmljeni kao usluga. Opsluživanje, potpora i održavanje se također unajmljuju vanjskom dobavljaču.
