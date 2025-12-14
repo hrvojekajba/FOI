@@ -361,6 +361,7 @@ Stvara se empatija prema ciljanim skupinama/kupcima kojima će novo razvijeni di
 - odabir najbolje ideje
 
 *Prototipiranje i testiranje*:
+
 - prototipiranje
 - SAP scene
 - ...
