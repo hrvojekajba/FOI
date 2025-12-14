@@ -90,3 +90,54 @@ Prema ovom pogledu informacijski sustav bitno utječe na strukturu, funkciju i p
 Osim "preslikavanja organizacije", svrha informatičkog sustava je **pružanje potrebnih informacija donositeljima odluka** tijekom samih procesa donošenja odluka.
 
 Informacijski sustav je *dio upravljačkog člana* organizacijskog sustava. Korisnici na temelju informacija donose odluke i poduzimaju aktivnosti, kojima utječu na organizacijski sustav.
+
+### 2.5. Procesni (funkcionalni) pogled na organizaciju
+Procesi reprezentiraju funkcionalnost sustava, a funkcionalnost je preduvjet za ostvarivanja svrhe sustava.
+
+#### 2.5.1. Informatički pogled na procese
+Osnovne informacije o objektnom sustavu su proces i podatci. Procesi i podatci su osnovni predment interesa tijekom razvoja informacijskg sustava.
+
+**Proces** je skup aktivnosti kojima se skup ulaznih podataka transformira u skup izlaznih podataka.
+
+#### 2.5.2. Funkcionalni pogled na organizaciju
+*Funkcionalno raščlanjivanje* je razlaganje neke funkcionalne komponente na funkcionalne komponente niže razine.
+
+Funkcijsko područje sadrži skup logički povezanih funkcija. Funkcija reprezentira postizanje svrhe sustava. Za razliku od procesa, funkcija nema dinamiku, dok proces ima definirane događaje i uvjete kojima se on pokreće i prekida.
+
+### 2.6. Model poslovanja, poslovnih procesa i informacijskog sustava
+**Model poslovanja (Bussiness model - BM)** je skup međusobno povezanih modela koji opisuju različite aspekte poslovanja, uključujući strukturu organizacije, poslovne ciljeve i prioritete, poslovne procese i pravila, padataka i sl. Model poslovanja mora predočiti koje se vrijednosti isporučuju kupcima, kako se to čini i s kakvim (financijskim) rezultatima.
+
+## 3. Metodologija informacijskih sustava
+**Metoda** je planski postupak za postignuće nekog cilja na teoretskom ili praktičnom području.
+
+**Metodologija** je općenito znanost o metodama i njihovoj primjeni.
+
+**Metodologija informacijskih/programskih sustava** je znanstvena disciplina o pravilima, pristupima, prpcesima, metodama, tehnikama i sredstvima *razvoja, primjene i održavanja* informacijskih i programskih sustava.
+
+### 3.1. Metodika
+Na temelju metodoloških istraživanja i praktičnih iskustava razvijene su *metodike razvoja, primjene i održavanja informacijskih i programskih sustava*.
+
+Metodika je uređen skup načela, pristupa, pravila, činjenica, obrazaca, metoda i tehnika rješavanja nekog zadatka. Ona je također normativni i preskriptivni obrazac za rješavanje posla te je i formalizirana apstrakcija razvojnog poduhvata.
+
+#### 3.1.1. Struktura metodike - pristupi
+**Pristup (paradigma)** je skup početnih pretpostavki o objektu projektiranja i skup općih načela, koja proizlaze iz pojedinih znanstvenih teorija ili iskustva.
+
+Pristupi određuju svrhu, ulogu, strukturu, ponašanje, način razvoja ili korištenja informacijskog ili programskog sustava, njegov odnos s okolinom i sl.
+
+#### 3.1.2. Struktura metodike - načela
+
+- Kakva je *uloga znanosti i struke u projektiranju*? (inženjerske pristup)
+- Kakva je *uloga informacijskog sustava*? (preslikavanje organizacije, upravljanje organizacijom)
+- Kakva je *namjena sustava*? (obrada transakcija, podrška u odlučivanju, podrška uredskog rada...)
+- Kakva je *usklađenost sa zahtjevima organizacije i korisnika*? (tehnički pristup, društveni pristup, tehničko-društveni pristup)
+- Što je *objekt modeliranja*, postojeći sustav, ili vizija budućeg sustava?
+- Kakva je *prilagodljivost stanju ili promjenama objektnog sustava*? (strukturni pristup, situacijski/adaptibilni pristup)
+- Kako izgleda *razvojni ciklus*? (fazni pristup, inkrementalni pristup)
+- Kakav je *odnos prema dijelovima i cjelini*? (analitički pristup, holistički pristup)
+- Što je *osnovni model*? (funkcijski pristup, podatkovni pristup, objektni pristup)
+...
+
+#### 3.1.3. Struktura metodike - obrasci procesa
+*Proces razvoja informacijskog sustava* je skup međusobno povezanih aktivnosti, koje se izvode tijekom razvojnog ciklusa. Stvarni se razvojni poduhvati izvode u skladu s odabranim obrascem procesa razvoja, koji su propisani ili preporučeni metodikom razvoja.
+
+#### 3.1.4. Struktura metodike - metode i tehnike
