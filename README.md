@@ -11,4 +11,4 @@ Sve skripte koje se nalaze u `.md` formatu se mogu pretvoriti u `.pdf` pomoću:
 ```bash
 $ pandoc skripta.md --pdf-engine="xelatex" -V block-headings -o skripta.pdf
 ```
-ili pomoću web-stranica koje automatiziraju proces.
+ili pomoću [web-stranica](https://cloudconvert.com/md-to-pdf) koje automatiziraju proces.
