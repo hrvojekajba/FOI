@@ -1,14 +1,16 @@
 # Operacijski sustavi - Vježba 2
 ## Pitanja i odgovori
----
+
 1. Napravi novi proces u kodu
 
 Koristimo `fork()` da napravimo novi proces.
 
+---
 2. Napravi novu dretvu u kodu
 
 Koristimo `pthread_create()` da napravimo novu dretvu.
 
+---
 3. Što je to dretva i čemu služi?
 
 Dretva je osnovna jedinica izvođenja programa u procesu. Svaki proces može imati jednu ili više dretvi, koje mogu paralelno izvoditi program.
