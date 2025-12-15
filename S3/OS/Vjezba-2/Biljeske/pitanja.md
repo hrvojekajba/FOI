@@ -2,36 +2,47 @@
 ## Pitanja i odgovori
 ---
 1. Napravi novi proces u kodu
+
 Koristimo `fork()` da napravimo novi proces.
 
 2. Napravi novu dretvu u kodu
+
 Koristimo `pthread_create()` da napravimo novu dretvu.
 
 3. Što je to dretva i čemu služi?
+
 Dretva je osnovna jedinica izvođenja programa u procesu. Svaki proces može imati jednu ili više dretvi, koje mogu paralelno izvoditi program.
 
 4. Što je to proces?
+
 Proces je okolina u kojem se izvodi program. Sastoji se od segmenta instrukcija, segmenta korisničkih podataka i segmenta sustavskih podataka.
 
 5. Što je zajednički spremnik i zašto je važan?
+
 Zajednički spremnik je alocirani memorijski prostor koji više procesa može koristiti kako bi međusobno dijelili podatke.
 
 6. Što radi `ipcs`?
+
 Pokazuje informacije o iskorištenim sredstvima za međuprocesnu komunikaciju.
 
 7. Čemu služi `ipcrm`?
+
 Služi sa brisanje određenih sredstva za međuprocesnu komunikaciju.
 
 8. Kako prokazati procese?
 
 
+
 9. Završi proces u funkciji
+
 
 
 10. Što to dijele dvije dretve istoga procesa?
 
 
+
 11. Promjeni kod tako da ispis u 2.b zadatku bude sporiji
+
 
 
 12. Gdje se poziva dretva?
