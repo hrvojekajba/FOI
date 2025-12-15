@@ -398,3 +398,141 @@ Osnovna svrha pojedinih procesa informacijskog sustava je prikupljanje, pohranji
 **Kupovanje gotovog rješenja** je opcija u kojoj organizacija kupi jedno od mnogobrojnih rješenja koja su dostupna na tržištu. Prednost gotovog rješenja je da se učinkovitost IS-a skoro odmah vidi, no nedostatak su cijena i potreba za prilagodbom procesa samom IS-u.
 
 **Program kao usluga** (SaaS) je pristup gdje je organizacija vlasnik podataka, a sam sustav (programi, platforma i infrastruktura) su unajmljeni kao usluga. Opsluživanje, potpora i održavanje se također unajmljuju vanjskom dobavljaču.
+
+## 7. Slučajevi korištenja
+Slučajevi korištenja koriste se u sistematskom i programskom inženjerstvu. Opisuju odnos sustava (aplikacije) i okoline (korisnika i drugih sustava). Slučajevi korištenja opisuju osnovnu specifikaciju funkcioniranja sustava i odnosa s okolinom, koju razumiju i korisnici. Srodni su sa korisničkim pričama i dijagramima konteksta.
+
+### 7.1. Model slučajeva korištenja
+Model slučajeva korištenja se sastoji od *specifikacije slučajeva korištenja* i *dijagrama slučaja korištenja*. Slučajevi korištenja su **izvorno tekstualni opisi**, a ne dijagrami. Dijagrami se u slučajevima korištenja koriste da daju kontekst tekstualnom opisu.
+
+Postoje tri razine složenosti:
+
+- **Skraćena**(pregledna) - samo glavni scenarij
+- **Puna** - više scenarija i specifikacije svakog scenarija
+- **Detaljna** - svaki scenarij s detaljnom specifikacijom unutarnje logike, početnim i završnim stanjima, zahjtevima prema sučelju, specifikacijom obrade grešaka i iznimki...
+
+Dijagram slučajeva korištenja opisuje *što* sustav radi, s gledišta vanjskog promatrača. Ne prikazuje kako sustav funkcionira iznutra, jer to i nije bitno za vanjskog promatrača.
+
+### 7.2. Osnovni koncepti
+**Slučaj korištenja (Use Case)** je skup akcija koje može izvesti neki sustav u međudjelovanju sa učesnicima. To je priča koja opisuje kako učesnici koriste sustav da bi postigli određene ciljeve ili da bi obavili neki zadatak. On predstavlja apstraktni zadatak (sadrži skup aktivnosti) kojeg izvode neki učesnici.
+
+**Veza (Association)** je sudjelovanje učesnika u slučaju korištenja, odnosno komunikacija između instanca korisnika i slučaja korištenja.
+
+**Učesnik (Actor)** je skup podudarajućih uloga koje korisnici imaju u interakciji sa slučajem korištenja. Učesnik je neko tko spada izvan promatranog sustava i s tim sustavom je u međudjelovanju, ali nijeg dio samog sustava. Učesnik može biti živo biće ili pak može biti drugi sustav.
+
+### 7.3. Generalizacija učesnika
+Koristi se kada su različiti učesnici u jednakom međudjelovanju sa slučajevima korištenja i imaju zajedničko ponašanje. Djeca nasljeđuju svojstva i ponašanje od roditelja, a nasljeđuju i veze sa slučajevima korištenja od roditelja (slično nasljeđivanju klasa).
+
+### 7.4. include i extend
+**Uključi (include)** je veza od *osnovnog slučaja korištenja* prema *uključenom slučaju korištenja*, koja označava da osnovni slučaj korištenja sadrži ponašanje uključenog slučaja korištenja. Na taj se način funkcionalnost i ponašanje koje se često koristi izdvaja u slučaj korištenja kojeg možemo uključivati u druge slučajeve korištenja prema potrebi. Osnovni slučaj korištenja **nije kompletan** bez uključenja.
+
+**Proširi (extend)** je veza od slučaja korištenja koji je *proširenje prema osnovnom slučaju korištenja*, koja označava da se ponašanje osnovnog slučaja korištenja proširuje ponašanjem proširenja. Na primjer, *plati karticom* proširuje slučaj korištenja *plati račun*, ali nije njegov dio, jer ipak možemo plaćati račune i bez kartice. *Plati račun* funkcionira i bez *plati karticom*.
+
+### 7.5. Granice sustava
+**Granica sustava** predstavlja granicu između fizičkog sustava i učesnika koji su u interakciji s fizičkim sustavom.
+
+## 8. Logički model podataka
+### 8.1. Osnovni model tijekom razvoja IS-a
+Razlikuju se četiri glavna pristupa:
+
+- Funkcijski pristup, tj. pristup orijentiran procesima
+- Podatkovni pristup, tj. pristup orijentiran podatcima
+- Funkcijsko-podatkovni pristup
+- Objektni pristup, tj. pristup orijentiran objektima
+
+Osnovne informacije o objektnom sustavu su podatci i procesi objektnog sustava, pa su zbog toga modeli procesa i modeli podataka osnovni modeli koji se izrađuju tijekom projektiranja. Modeli podataka i modeli procesa mogu biti potpuno odvojeni, ili mogu biti međusobno povezani.
+
+U semantičkom smislu, modeli objekata objedinjavaju modele podataka i modele procesa.
+
+### 8.2. Podatkovni pristup
+Podatkovni pristup pretpostavlja da je model podataka osnovni model, koji se oblikuje tijekom razvoja informacijskog i programskog sustava.
+
+Model podataka je stabilniji od modela procesa, struktura procesa i njihova unutarnja logika je više izložena promjenama tijekom projektiranja, dok struktura podatka nije. Prikupljanje, pohranjivanje, obrada i prikaz podataka osnovna je svrha velikog broja funkcija informacijskog sustava, te da bi se ova svrha ostvarila, potrebno je dobro poznavati strukturu podataka s kojom radimo. Također, izrada formalnih modela funkcije i ponašanja nije moguća bez prethodne izrade modela podataka.
+
+### 8.3. Definicija i osnovni koncepti
+**Model podataka je apstraktni prikaz skupova podataka, njihovih međusobnih veza i ograničenja, te načina manipulacije podatcima.**
+
+Osnovni koncepti modela podataka su:
+
+- skup koncepata za **opis strukture podataka** (podatci koji opisuju objekte i pojave mogu se razvrstati, tako da svaki elementarni podatak pripada nekom tipu atributa nekog tipa podatkovnog objekta)
+- skup koncepata za **očuvanje integriteta podataka** (skup pravila koja opisuju dozvoljena stanja sustava i dozvoljeni prijelaz iz stanja u stanje)
+- skup operatora kojima je moguće opisati **promjenu stanja podataka** sustava (mehanizmi promjene vrijednosti podataka)
+
+### 8.4. Statički i dinamički model
+Cjeloviti model sustava prikazuje statička i dinamička svojstva sustava. 
+
+**Statički modeli** prikazuju *strukturu i stanje podataka sustava*:
+
+- podatci koji opisuju stvarne ili zamišljene objekte i pojave objektnog sustava mogu se razvrstati u *podatkovne tipove* (klase, entitete), tako da svaki elementarni podatak opisuje neko svojstvo (atribut) nekog podatkovnog objekta
+- podatkovni objekti su međusobno povezani **vezama**
+- grupiranje pojava u tipove obavlja se na temelju zajedničkih tipova atributa i/ili na temelju sličnih veza s drugim podatkovnim tipovima
+- svaki podatkovni objekt u jednom trenutku ima jedno stabilno, prepoznatljivo i konzistentno **stanje**, opisano skupom vrijednosti njegovih atributa
+
+**Dinamički modeli** opisuju *promjene stanja sustava*, odnosno njegovih podatkovnih objekata i veza među njima:
+
+- stanje sustava mijenja se vanjskim djelovanjem (događaj), na način da se promijene vrijednosti podataka koji opisuju stanje sustava
+- nakon ove promjene nastaje novo stabilno, prepoznatljivo i konzistentno stanje sustava
+
+### 8.5. Model entiteti-veze-atributi
+**Model entiteti-veze-atributi (ERA model)** prikazuje podatke sustava u obliku tipova entiteta, koji su opisani tipovima atributa i povezani tipovima veza.
+
+ERA model je osnovni i najčešće primjenjiva vrsta konceptualnog i logičkog modela podataka. Prema logičkom modelu se određuje buduća struktura baze podataka unutar sustava. Samo logičko modeliranje je neovisno o software-u i hardware-u, uključujući i sustav za upravljanje bazom podataka.
+
+Najbitnije verzije ovog modela su *ERA model Chena i Martina*. Notaciju koju koristimo pri kreiranju ERA modela na vježbama i projektu je Martinova.
+
+### 8.6. Entitet
+**Entitet** je nedvosmisleno prepoznatljiv koncept, predmet, biće ili događaj o kojem se u informacijskom sustavu prikupljaju i pohranjuju podatci. Entiteti mogu biti materijalni ili apstraktni (nematerijalni), stvarni ili zamišljeni.
+
+**Pojave entiteta** se mogu grupirati u *tipove entiteta*, odnosno skupove pojava s jednakim tipovima atributa.
+
+### 8.7. Veza
+**Veza** povezuje pojave dva tipa entiteta ili različite pojave istog tipa entiteta. *Tip veze* se predočava spojnom crtom, a *red veze* određuje koliko tipova entiteta sudjeluje u vezi (unarna, binarna, n-arna).
+
+*Unarna* (rekurzivna, refleksivna) veza povezuje dvije različite pojave istog tipa eniteta. Najčešće pokazuje strukturu, odnosno da pojava entiteta sadrži pojave istog tipa, ali niže razine složenosti.
+
+### 8.8. Ograničenja
+Osnovna ograničenja u ERA modelu su:
+
+- ograničenja domene atributa
+- **ograničenja kardinalnosti veza eniteta**
+- ograničenja kardinalnosti veza entiteta i njihovih atributa
+
+**Ograničenja kardinalnosti veza** određuju broj pojava jednog tipa koji može ili mora biti povezan s jednom pojavom drugog tipa. Kardinalnost može biti 0, 1, M (više) ili neki određeni broj (npr. 4).
+
+### 8.9. Asocijativni tip entiteta
+**Asocijativni tip entiteta** nastaje od:
+
+- *veze kardinalnosti više:više (M:N)* - svaka veza tipa M:N se može pretvoriti u dvije veze tipa 1:M i 1:N
+- veze koje sadrže atribute
+- veze tri ili više tipova entiteta (n-arna veza)
+
+### 8.10. Atribut
+**Atribut** je podatak koji opisuje entitet ili omogućava njegovo prepoznavanje. Atributi entiteta razvrstavaju se na:
+
+- *identifikacijske* (omogućavaju prepoznavanje pojave tipa entiteta)
+- *opisne* (opisuju stanje, položaj i kvalitetu tipa entiteta)
+- *izvedene* (vrijednosti im se svode na vrijednosti drugih tipova atributa)
+
+U jednom vremenskom trenutku, jedna pojava tipa entiteta može imati samo jednu vrijednost atributa za svaki tip atributa, što omogućuje praćenje stanja pojava eniteta.
+
+## 9. Relacijski model i pretvorbe
+### 9.1. Relacijski model
+Relacijski model zasnovan je na teoriji skupova. U ovom modelu, svaki iskaz se može napisati u obliku relacijske sheme, npr.:
+
+- "Kupci u našem poduzeću naručuju određene količine različitih proizvoda."
+
+se može zapisati kao: `NARUDŽBA(Kupac, Proizvod, Količina)`.
+
+Relaciju čini skup zapisa sa značenjima, kao zapis iznad, koji se mogu prikazati u tabličnom obliku.
+
+### 9.2. Relacijska shema
+**Relacijska shema** je definicija relacije u obliku naziva relacije i popisa atributa (obilježja) koji su u sastavu te relacije: `R(a1, a2, a3, ...an)`. To je shema po kojoj se podatci zapisuju u bazu, ona ne predstavlja same podatke. Sama shema je nepromjenjiva, dok podatci nisu.
+
+### 9.3. Ograničenja relacijske sheme
+Relacijska shema ne smije sadržavati dva ista jednaka atributa. Sam poredak atributa u tablici (shemi) je proizvoljan i bira ga sam projektant. Različite relacije smiju sadržavati jednake atribute, ali u takvom slučaju se dodaje prefiks na ime atributa kako bi se označilo kojoj relaciji pripada.
+
+Posljedice ovih ograničenja su:
+
+- tablica *ne smije* sadržavati dva ista stupca
+- redoslijed stupaca u tablici je proizvoljan
+- promjena stupca ne mijenja sadržaj ni značenje
