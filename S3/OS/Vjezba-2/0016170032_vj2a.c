@@ -81,9 +81,9 @@ int main() {
     sigac.sa_handler = brisi;
     sigaction(SIGINT, &sigac, NULL);
 
+
     // pokreni procese
     for (int p = 0; p < broj_procesa; p++) {
-        sleep(1);
         pid_t pid = fork();
 
         // obradi dijete proces
