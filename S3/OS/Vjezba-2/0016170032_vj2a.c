@@ -44,13 +44,10 @@ int izracunaj_broj_procesa(int broj_elementa, int velicina_dijela) {
         return (abs(broj_elementa / velicina_dijela) + 1);
 }
 
-int main() {
-    // odredi broj elemenata i velicinu logickih dijelova
-    int broj_elemenata = 10001, velicina_dijela;
-    while (broj_elemenata <= 0 || broj_elemenata > 10000) {
-        printf("\nUnesite broj elemenata polja i velicinu dijelova polja: ");
-        scanf("%d %d", &broj_elemenata, &velicina_dijela);
-    }
+int main(int argc, char *argv[]) {
+    // odredi broj elementa i velicinu logickog dijela
+    int broj_elemenata = atoi(argv[1]);
+    int velicina_dijela = atoi(argv[2]);
 
     // zadaj id zajednickog prostora
     shmid = shmget(IPC_PRIVATE, sizeof(int) * broj_elemenata, 0600);
