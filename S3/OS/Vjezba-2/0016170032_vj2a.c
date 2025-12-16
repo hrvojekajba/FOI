@@ -20,8 +20,7 @@ void brisi(int sig) {
     exit(0);
 }
 
-void odredi_sumu(int p, int broj_procesa, int broj_elemenata,
-                 int velicina_dijela, int glavno_polje[]) {
+void odredi_sumu(int p, int broj_procesa, int broj_elemenata, int velicina_dijela, int glavno_polje[]) {
     // odredi pocetak i kraj segmenta
     int pocetak = p * velicina_dijela;
     int kraj = pocetak + velicina_dijela - 1;
@@ -78,15 +77,13 @@ int main(int argc, char *argv[]) {
     sigac.sa_handler = brisi;
     sigaction(SIGINT, &sigac, NULL);
 
-
     // pokreni procese
     for (int p = 0; p < broj_procesa; p++) {
         pid_t pid = fork();
 
         // obradi dijete proces
         if (pid == 0) {
-            odredi_sumu(p, broj_procesa, broj_elemenata, velicina_dijela,
-                        glavno_polje);
+            odredi_sumu(p, broj_procesa, broj_elemenata, velicina_dijela, glavno_polje);
             exit(0);
         }
     }
