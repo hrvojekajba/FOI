@@ -90,7 +90,6 @@ int main() {
         if (pid == 0) {
             odredi_sumu(p, broj_procesa, broj_elemenata, velicina_dijela,
                         glavno_polje);
-            shmdt((void *)glavno_polje);
             exit(0);
         }
     }
