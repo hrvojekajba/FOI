@@ -5,8 +5,7 @@
 #include <unistd.h>
 
 // zajednicke globalne varijable
-int ZASTAVICE[2] = {
-    0, 0};     // koristimo da pratimo koja se dretva zeli sljedece izvrsiti
+int ZASTAVICE[2] = {0, 0};     // koristimo da pratimo koja se dretva zeli sljedece izvrsiti
 int PRAVO = 0; // koja dretva se prva izvodi
 
 void prekidna_rutina(int sig) {
