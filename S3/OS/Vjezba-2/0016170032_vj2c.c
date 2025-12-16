@@ -36,8 +36,7 @@ void ulaz_kriticki(int prva_dretva, int druga_dretva, int i) {
         if (PRAVO == druga_dretva) {
             ZASTAVICE[prva_dretva] = 0;
             // pricekaj da zavrsi druga dretva
-            while (PRAVO == druga_dretva)
-                ;
+            while (PRAVO == druga_dretva);
             ZASTAVICE[prva_dretva] = 1;
         }
     }
