@@ -66,3 +66,4 @@ Internet je sama mreža svih mreža. Domaćini se povezuju na Internet preko pri
 Postoje dvije glavne razine Interneta, to su prva razina (*tier one*) koja se sastoji od komercijalnih ISP-ova (Level 3, Sprint AT&T...) koji osiguravaju nacionalnu i međunarodnu pokrivenost te i mreže za distribuciju sadržaja (Google...) koja je privatna mreža koja povezuje podatkovne centre na Internetu, često zaobilazeći ISP-ove prve razine i regionalne ISP-ove.
 
 ### 1.5. Performanse
+Postoje četiri razloga za kašnjenje paketa: *trajanje prijenosa, obrada u čvoru, čekanje u redu i širenje signala.*
