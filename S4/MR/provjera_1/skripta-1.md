@@ -61,3 +61,8 @@ U TDM-u je samo vrijeme u kojem je vodič dostupan podijeljeno u odsječke. Svak
 ![TDM](slike/TDM.png)
 
 ### 1.4. Struktura interneta
+Internet je sama mreža svih mreža. Domaćini se povezuju na Internet preko pristupnih davatelja internetskih usluga (ISP). Pristupni ISP-ovi moraju biti međusobno povezani tako da bilo koja dva domaćina mogu međusobno slati pakete, neovisno o tome gdje se nalaze. Rezultirajuća mreža je izuzetno kompleksna, na njen razvoj su utjecala ekonomija i nacionalne politike.
+
+Postoje dvije glavne razine Interneta, to su prva razina (*tier one*) koja se sastoji od komercijalnih ISP-ova (Level 3, Sprint AT&T...) koji osiguravaju nacionalnu i međunarodnu pokrivenost te i mreže za distribuciju sadržaja (Google...) koja je privatna mreža koja povezuje podatkovne centre na Internetu, često zaobilazeći ISP-ove prve razine i regionalne ISP-ove.
+
+### 1.5. Performanse
