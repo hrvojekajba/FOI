@@ -28,7 +28,7 @@ Vrste usluga:
 
 **Uslužne (servisne) tvrtke** su one tvrtke što podržavaju proizvodnju i distribuciju roba, pomažu drugim tvrtkama da postignu vlastite ciljeve i dodaju vrijednost našim životima.
 
-## 2. Metode dizajna usluge
+## 2. Metode dizajna usluge - prvi dio
 Karakteristike usluge su:
 
 - Usluga je *neopipljiva*
@@ -47,3 +47,89 @@ Usluga pruža dvije dodane vrijednosti: *korisnost* i *garanciju/jamstvo*.
 
 *Korisnost* se odnosi na to **što** korisnik dobije, a *garancija/jamstvo* se odnosi na način **kako** mu je nešto isporučeno.
 
+**IT usluga** (usluga informacijske tehnologije) je specifična vrsta usluge koja se temelji na informacijskim tehnologijama.
+
+IT usluga kombinira:
+
+- **Tehnologije**: hardver (serveri), softver (aplikacije) i mreže
+- **Ljudi**: stručnjaci koji upravljaju tim sustavima i rješavaju probleme
+- **Procesi**: pravila i načini na koji se ta tehnologija koristi (npr. kako se prijavljuje kvar)
+
+### B2B IT usluge
+
+**B2B IT usluge** su tehnološka rješenja koja jedna tvrtka pruža drugoj tvrtci kako bi joj pomogla u poslovanju. Ove usluge obuhvaćaju razvoj softvera, upravljanje podacima, usluge u oblaku, IT sigurnost, mrežnu sigurnost i tehničku podršku.
+
+Cilj B2B IT usluga je povećanje učinkovitosti, smanjenje troškova i osiguravanje konkuretske prednosti tvrtkama. Uz to se postižu strateške vrijednosti poput povećanja operativne učinkovitosti putem automatizacije, osiguravanja sigurnosti podataka i usklađivanja, te omogućavanjem inovacija uvođenjem novih tehnologija.
+
+Tradicionalne poslovne usluge *obično uključuju netehničke aspekte poslovnih operacija*, kao što su financijsko savjetovanje, upravljanje ljudskim potencijalima, korisnička podrška i prodaja. Dok su IT usluge po svojoj prirodi *tehnološke te su usredotočene na stvaranje, implementaciju i upravljanje informacijskim sustavima i tehnološkim rješenjima*.
+
+### Vrste B2B IT usluga
+#### Upravljane usluge (Managed Services)
+Odnose se na prepuštanje (outsourcing) administracije i održavanja IT strukture i sustava vanjskom pružatelju usluga. Neki od primjera su: upravljanje mrežom, izrada i oporavak sigurnosnih kopija podataka, sigurnosni nadzor te administracija aplikacija i usluga u oblaku.
+
+#### Mrežne usluge (Network Services)
+Uključuju planiranje, implementaciju, upravljanje i nadzor mrežne infrastrukture tvrtke. Neki od primjera su: upravljanje LAN/WAN mrežama, projektiranje i optimizaciju mreže, VoIP (Voice over Internet Protocol)usluge, kao i pružanje bežičnih mrežnih rješenja.
+
+#### Razvoj i održavanje softvera (Software Development and Maintenance)
+Usluge razvoja i održavanja softvera pokrivaju cijeli životni ciklus razvoja softvera, od razvoja i dizajna do održavanja i podrške nakon implementacije. Ove IT usluge omogućuju tvrtkama dobivanje *prilagođenih softverskih rješenja* koja su specifično dizajnirana prema njihovim potrebama i zahjtevima.
+
+#### Sigurnosne usluge (Security Services)
+Usredotočene su na zaštitu podataka, mreža i sustava tvrtke od kibernetičkih prijetnji i napada. Neki od primjera su: upravljanje vatrozidom (firewall), otkrivanje i sprječavanje upada, zaštita od zlonamjernog softvera (malware), enkripcija podataka i edukacija zaposlenika o sigurnosti.
+
+#### Konzultantske usluge i IT podrška (Consulting Services and IT Support)
+Pružaju stručno znanje i strateške uvide koji pomažu organizacijama u planiranju i provedbi njihovih IT strategija. Neki od primjera su: procjena postojeće IT infrastrukture, preporuke za tehnološke nadogradnje i implementaciju novih sustava.
+
+#### Usluge u oblaku (Cloud Services)
+Nude tvrtkama mogućnost pristupa IT resursima poput računalne snage, prostora za pohranu i aplikacija putem interneta, bez potrebe za ulaganjem u vlastitu fizičku infrastrukturu.
+
+Glavne vrste usluga u oblaku uključuju:
+
+1. **Infrakstruktura kao usluga (IaaS)** - IT administrator konfigurira servere (npr. upravlja virtualnim strojevima na Azureu, Google Drive...)
+2. **Platforma kao usluga (PaaS)** - programer piše kod (npr. razvija aplikaciju na Heroku)
+3. **Softver kao usluga (SaaS)** - korisnički softver koji se pruža organizacijama (npr. GMail)
+
+### Upravljanje IT uslugama
+Upravljanje IT uslugama je:
+
+- **Profesionalna procedura/praksa** - planiranje, dizajniranje, razvijanje, isporuka i optimaliziranje IT usluga tako da odgovaraju svrsi i načinu uporabe.
+- **Specijalizirana disciplina** - procesi, metode, aktivnosti, funkcije i uloge koje pružatelj treba kako bi isporučio uslugu koja osigurava određenu vrijednost korisniku.
+- **Profesija** - pojedinci koji posjeduju potrebne vještine za upravljanje uslugama te se zalažu za isporuku kvalitetne IT usluge.
+
+### Dizajn usluga
+**Dizajn usluga** je aktivnost planiranja i organiziranja poslovnih resursa kako bi se poboljšalo iskustvo korisnika ili kako bi se poboljšalo iskustvo zaposlenika.
+
+Postoje *tri ključne komponente dizajna usluge*:
+
+- **ljudi** - odnosi se na svakoga tko kreira ili koristi uslugu
+- **rekviziti** - odnosi se na fizičke ili digitalne artefakte (uključujući proizvode) koji su potrebni za uspješno obavljanje usluge
+- **procesi** - postupci koje obavljaju zaposlenici ili korisnici tijekom pružanja/konzumiranja usluge
+
+**Dizajn usluge** je razmišljanje i dizajniranje svake interakcije koju pružatelj usluge ima s korisnikom, tako da se isporučuje *unaprijeđeno iskustvo korisniku*, ali i poveća *profitabilnost organizacije*.
+
+**Dizajn korisničkog iskustva (UX)** se odnosi na sve interakcije između korisnika i određenog (obično digitalnog) proizvoda. Njegov cilj je stvoriti proizvod koji korisnicima *pruža smislena i relevantna iskustva*.
+
+**Dizajn korisničkog sučelja (UI)** se više odnosi na izgled i dojam digitalnih sučelja. Usredotočuje se na to da interakcije s proizvodom budu jednostavne i učinkovite te da proizvod bude ugodan oku.
+
+Principi dizajna usluga:
+
+1. **Orijentiranost na korisnika** - na uslugu treba gledati iz perspektive korisnika
+2. **Sukreativnost** - svi dionici bi trebali biti uključeni u proces dizajna
+3. **Slijednost** - usluga bi trebala biti vizualizirana kao niz slijednih aktivnosti
+4. **Evidentiranje** - usluge su neopipljive, ali bi trebale biti opisane kroz fizike artefakte
+5. **Holistišnost** - okolina u kojoj će usluga funkcionirati treba biti uzeta u obzir.
+
+### Metode - faza istraživanja
+#### Persone
+Kreiranje izmišljenih likova sa stvarnim podacima dobivenih analizom i istraživanjem populacije. **Persona** je predstavnik određene društvene skupine za koju je izrada proizvoda ili usluge namjenjena. Jedna društvena skupina predstavlja jedan segment tržišta odnosno *grupu ljudi sa sličnim osobinama i navikama*.
+
+Kreiranjem persona dizajnerski timovi stječu određenu vrstu empatije i mogućnost pogleda na proizvod ili usluge iz perspektive korisnika i na taj nalin steknu uvid u potrebe korisnika.
+
+#### Mapa vrijednosti (Value Proposition Canvas)
+Mapa vrijednost je prikaz prikupljenih podataka o korisniku i vrijednost koju određena usluga donosi. Ona identificira profil kupca te vrijednosti koje mu određena usluga pruža. Prikazuje koje to karakteristike mora imati proizvod/usluga kako bi se zadovoljile određene grupe korisnika.
+
+Mapa vrijednost ima dvije strane. Jedna strana odnosi se na *profil kupca* te ga detaljnije opisuje. Druga strana je *mapa vrijednosti* koja opisuje kako će se kreirati vrijednost za korisnika.
+
+#### Mapa putovanja korisnika
+Prati stjecanje iskustva koje korisnik doživi tijekom vremena uporabe nekog proizvoda ili usluge. Koristi se za zamišljanje budućeg korištenja usluge, za razumijevanje same usluge i detektiranje pogrešaka te mogućnosti poboljšanja i za intervjuiranje korisnika usluge te prikupljanje informacija o njegovom iskustvu.
+
+## 3. Dizajn usluge (Blueprint usluge, prototip i minimalni održivi proizvod)
