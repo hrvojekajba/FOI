@@ -29,3 +29,21 @@ Vrste usluga:
 **Uslužne (servisne) tvrtke** su one tvrtke što podržavaju proizvodnju i distribuciju roba, pomažu drugim tvrtkama da postignu vlastite ciljeve i dodaju vrijednost našim životima.
 
 ## 2. Metode dizajna usluge
+Karakteristike usluge su:
+
+- Usluga je *neopipljiva*
+- Usluga je *promjenjiva*
+- Usluga je *nepohranjiva*
+- Zadovoljstvo uslugom je *subjektivno*
+- Usluge su *neprenosive*
+- Korisnici *sudjeluju* u stvaranju usluge
+- Usluga se konzumira *u isto vrijeme* kada se i stvara
+
+Usluga je nešto što korisnicima pruža određene vrijednosti:
+
+- "Usluge predstavljaju **načine isporuke određene vrijednosti korisnicima**, omogućavanjem da postignu rezultate koje žele postići, bez učestvovanja u specifičnim troškovima ili rizicima."
+
+Usluga pruža dvije dodane vrijednosti: *korisnost* i *garanciju/jamstvo*.
+
+*Korisnost* se odnosi na to **što** korisnik dobije, a *garancija/jamstvo* se odnosi na način **kako** mu je nešto isporučeno.
+
