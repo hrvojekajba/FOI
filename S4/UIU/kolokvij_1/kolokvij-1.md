@@ -133,3 +133,87 @@ Mapa vrijednost ima dvije strane. Jedna strana odnosi se na *profil kupca* te ga
 Prati stjecanje iskustva koje korisnik doživi tijekom vremena uporabe nekog proizvoda ili usluge. Koristi se za zamišljanje budućeg korištenja usluge, za razumijevanje same usluge i detektiranje pogrešaka te mogućnosti poboljšanja i za intervjuiranje korisnika usluge te prikupljanje informacija o njegovom iskustvu.
 
 ## 3. Dizajn usluge (Blueprint usluge, prototip i minimalni održivi proizvod)
+### Blueprint usluge
+**Blueprint usluge (Service blueprint)** je dijagram koji vizualizira odnose između različitih komponenata usluge - ljudi, dokazi (fizički ili digitalni) i procesi - koji su izravno povezani s dodirnim točkama na određenom putovanju kupca.
+
+Postoje tri vrste osnovnih elemenata kod Blueprinta usluge:
+
+1. Razdjelne linije
+2. Blokovi
+3. Simboli (osnovni)
+
+#### Razdjelne linije
+Postoje tri vrste razdjelnih linija:
+
+- **Linija interakcije (line of interaction)** - točka interakcije između korisnika i usluge
+- **Linija vidljivosti (line of visibility)** - ispod ove linije korisnik ne vidi što se događa, ali ima doticaja s procesima u poduzeću
+- **Linija interne interakcije (line of internal interaction)** - uključivanje partnera, interni procesi u poduzeću
+
+#### Blokovi
+Postoji pet vrsta blokova:
+
+- **Fizički dokazi** - rekviziti i lokacije koje korisnik koristi tijekom svoje interakcije s uslugom
+- **Akcije klijenata** - akcije koje korisnik usluge poduzima kkao bi mogao pristupiti/dobiti uslugu
+- **Frontstage** - aktivnosti kod kojih postoji interakcije licem u lice između klijenata i pružatelja usluge
+- **Backstage** - sve aktivnosti koje je potrebno odraditi u interakciji s korisnikom kako bi mu se isopučila usluga, ali se ne odvijaju kroz komunikaciju licem u lice
+- **Potporni procesi** - nalaze se ispod linije interakcije, odnose se na aktivnosti koje podupiru isporuku usluge
+
+#### Simboli (osnonvi)
+Postoje tri osnovne vrste simbola:
+
+- **Pravokutnik** - simbol određene aktivnosti, odnosno procesa
+- **Strelica** - pokazuje smjer prelaska od jednog koraka/aktivnosti/procesa do drugog
+- **Romb** - simbol odluke koji se zasniva na određenom pitanju, iz njega može izlaziti više strelica
+
+### Prototip i prototipiranje
+Izrada prototipa (prototipiranje) je eksperimentalni proces u kojem dizajnerski timovi implementiraju ideje u opipljive oblike od papira ili u digitalnoj formi.
+
+Prototipi se rade u ranim fazama razvoja proizvoda kako bi se:
+
+- Utvrdili koncepti dizajna
+- Testirala ideja na korisnicima
+- Validirao dizajn
+- Prikupile povratne informacije naručitelja
+- Uštedjelo vrijeme kroz minimiziranje grešaka
+
+Prednosti izrade prototipa su: jasna slika svim dionicima, rano prihvaćanje promjena, rano uočavanje nedostataka, bolje upravljanje vremenom, smanjenje troškova izrade...
+
+### Minimalan održivi proizvod (MVP)
+Minimalan održivi proizvod (Minimum viable product - MVP) je proizvod s dovoljno značajki da privuče rane kupce i potvrdi ideju proizvoda u ranoj fazi razvojnog ciklusa proizvoda.
+
+Minimalan održivi proizvod se radi da se:
+
+- proizvod što prije pusti na tržište
+- testira ideja sa stvarnim korisnicima (prije nego je uloženo previše vremena i sredstava)
+- sazna što odgovara krajnjim korisnicima (možda i dodaju neke nove funkcionalnosti)
+
+### Prioritizacija funkcionalnosti
+Postoje različite metode koje pomažu u prioritizaciji funkcionalnosti:
+
+1. **Matrica utjecaja i uloženog truda** (Impact-Effort matrix)
+2. **Tablica izvedivosti, poželjnosti i održivosti** (Feasibility, desirability, and visibility scorecard)
+3. **RICE metoda**
+4. **MoSCoW analiza**
+5. **Kano model**
+
+#### Matrica utjecaja i uloženog truda
+Matrica se sastoji od četiri kvadrata s obzirom na dvije dimenzije: **utjecaj** i **uloženo**.
+
+Utjecaj predstavlja vrijednost koju će funkcionalnost donijeti krajnjem korisniku, a uloženo predstavlja uloženu količinu resursa da bi se funkcionalnost razvila.
+
+#### Tablica izvedivosti, poželjnosti i održivosti
+U tablici se ocjenjuju tri kriterija:
+
+1. **Izvedivost (feasibility)** - mogućmnost tehničke izvedivosti rješenja
+2. **Poželjnost (desirability)** - razina dodane vrijednosti koju korisnicima pruža funkcionalnost
+3. **Održivost (viability)** - je li funkcionalnost nužna za poslovanje i održiva tokom vremena
+
+#### RICE metoda
+RICE metoda u obzir uzima četiri čimbenika:
+
+- **Doseg (Reach)** - broj korisnika funkcionalnosti kroz vrijeme
+- **Utjecaj (Impact)** - dodana vrijednost za korisnike
+- **Pouzdanost (Confidence)** - koliko je pouzdana procjena za doseg i utjecaj
+- **Uloženo (Effort)** - uložena količina resursa da bi se funkcionalnost razvila
+
+Ova četiri čimbenika se koriste za izračun prioritizacije funkcionalnosti sljedećom formulom: $\frac{Doseg * Utjecaj * Pouzdanost}{Uloženo}
