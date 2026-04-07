@@ -216,4 +216,8 @@ RICE metoda u obzir uzima četiri čimbenika:
 - **Pouzdanost (Confidence)** - koliko je pouzdana procjena za doseg i utjecaj
 - **Uloženo (Effort)** - uložena količina resursa da bi se funkcionalnost razvila
 
-Ova četiri čimbenika se koriste za izračun prioritizacije funkcionalnosti sljedećom formulom: \frac{Doseg * Utjecaj * Pouzdanost}{Uloženo}
+Ova četiri čimbenika se koriste za izračun prioritizacije funkcionalnosti sljedećom formulom: 
+
+$$
+\frac{Doseg * Utjecaj * Pouzdanost}{Uloženo}
+$$
