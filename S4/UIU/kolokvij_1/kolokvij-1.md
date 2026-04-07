@@ -194,7 +194,7 @@ Postoje različite metode koje pomažu u prioritizaciji funkcionalnosti:
 2. **Tablica izvedivosti, poželjnosti i održivosti** (Feasibility, desirability, and visibility scorecard)
 3. **RICE metoda**
 4. **MoSCoW analiza**
-5. **Kano model**
+5. **KANO model**
 
 #### Matrica utjecaja i uloženog truda
 Matrica se sastoji od četiri kvadrata s obzirom na dvije dimenzije: **utjecaj** i **uloženo**.
@@ -221,3 +221,17 @@ Ova četiri čimbenika se koriste za izračun prioritizacije funkcionalnosti slj
 $$
 \frac{Doseg * Utjecaj * Pouzdanost}{Uloženo}
 $$
+
+#### MoSCoW analiza
+U MoSCoW analizi se funkcionalnosti svrstavaju u četiri kategorije:
+
+- **Must (M)** - ključne funkcionalnosti koje moraju biti sadržane
+- **Should have (S)** - funkcionalnosti koje bi trebale biti sadržane, iako nisu ključne
+- **Could (C)** - funkcionalnosti koje bi bilo dobro obuhvatiti, iako nisu nužne, mali je utjecaj ako se izbace, međutim mogu doprinijeti zadovoljstvu klijenata
+- **Will not (W)** - funkcionalnosti koje ne prestavljaju dovoljnu dodanu vrijednost da bi bile uključene u ovom trenutku, međutim moguće ih je razmotriti u budućim izdanjima
+
+#### KANO model
+KANO model u obzir uzima dva primarna kriterija za rangiranje funkcionalnosti:
+
+- **Funkcionalnost u smislu izvedivosti** - predstavlja stupanj na kojem određena funckionalnost može biti implementirana
+- **Zadovoljstvo klijenata** - dodana vrijednost za korisnike koja se postiže implementacijom određene funkcionalnosti
