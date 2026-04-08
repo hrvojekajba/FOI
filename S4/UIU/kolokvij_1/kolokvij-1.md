@@ -235,3 +235,43 @@ KANO model u obzir uzima dva primarna kriterija za rangiranje funkcionalnosti:
 
 - **Funkcionalnost u smislu izvedivosti** - predstavlja stupanj na kojem određena funckionalnost može biti implementirana
 - **Zadovoljstvo klijenata** - dodana vrijednost za korisnike koja se postiže implementacijom određene funkcionalnosti
+
+## 4. Metode dizajna usluge - drugi dio
+### Metode - faza istraživanja
+#### Mapa dionika
+Prikaz (vizualni ili fizički) različitih grupa dionika koji su povezani sa određenom uslugom. Koristi se kako bi se dokumentirali svi dionici i njihova međusobna povezanost. Interes i podrška (utjecaj) dionika omogućuje poduzeću da ostvare svoju punu viziju i stvore dodanu vrijednost (za nekoga).
+
+Cilj mape dionika je da se identificiraju problemi svih dionika te da se odrede njihovi zajednički zahtjevi i interesi (klasteriranje).
+
+#### Safari usluge
+Metoda istraživanja korisnika kako bi se razumjela usluga, korištenjem određene usluge razumije se kako ta usluga radi i koje je iskustvo potaknuto. U suštini, ova metoda je potraga za primjerima loših i dobrih usluga.
+
+Cilj safarija usluge je da se utvrde faktori koji utječu na pozitivno korisničko iskustvo, tj. da se identificiraju korisnički problemi i želje.
+
+#### Praćenje
+Praćenje osoba u određenom kontekstu, istraživaći se uključuju u život korisnika i promatraju njihovo ponašanje.
+
+Cilj metode je identificiranje točke u kojoj se pojavljuje problem, razvijanje ideja ra razvoj kroz praćenje (i dijeljenje iskustva s korisnikom), identifikacija razlike između onoga što korisnik govori i kako se zapravo ponaša te također može služiti da evaluaciju raznih koncepata.
+
+Postoje četiri vrste praćenja:
+
+1. **Skriveno** - promatrane osobe nisu upoznate s praćenjem
+2. **Direktno** - u zadanom vremenu i prostoru
+3. **Indirektno** - prošlo ponašanje
+4. **Bez određenog subjekta** - ne želi se utjecati na ponašanje određenog subjekta
+5. **Strukturirano/Nestrukturirano**
+
+#### Dan u životu
+Prikaz prikupljenih podataka o tipičnim dnevnim aktivnostima odabrane kategorije korisnika. Korisnik se prati u određenom vremenu i lokaciji kako bi se razumjele aktivnosti koje radi s njegovog stajališta.
+
+Cilj metode je doći do šireg prikaza motivatora koji utječu na korištenje usluge.
+
+### Inovativnost
+**Inovacija** je primjena novih ideja, metoda ili uređaja kako bi se stvorila određena vrijednost. Neki od čestih oblika inovacije su: *inovacija proizvoda* (uvođenje potpuno nove robe ili značajno poboljšanje trenutne robe), *inovacija procesa* (novi način proizvodnje ili dostave koji štedi vrijeme i novac), *marketinška inovacija* (promjena u dizajnu pakiranja, plasmanu ili promociji), *organizacijska inovacija* (promjena načina rada na koji tvrtka posluje).
+
+### Concept/Knowledge teorija
+||Koncepti|Znanja|
+----
+|Unutar organizacije|Ispitivanje u studiju|R&D, laboratorijsko istraživanje|
+|Unutar korisnikovog svijeta|Korištenje, sudjelovanje i usklađivanje|Prikupljanje podataka|
+
