@@ -270,8 +270,39 @@ Cilj metode je doći do šireg prikaza motivatora koji utječu na korištenje us
 **Inovacija** je primjena novih ideja, metoda ili uređaja kako bi se stvorila određena vrijednost. Neki od čestih oblika inovacije su: *inovacija proizvoda* (uvođenje potpuno nove robe ili značajno poboljšanje trenutne robe), *inovacija procesa* (novi način proizvodnje ili dostave koji štedi vrijeme i novac), *marketinška inovacija* (promjena u dizajnu pakiranja, plasmanu ili promociji), *organizacijska inovacija* (promjena načina rada na koji tvrtka posluje).
 
 ### Concept/Knowledge teorija
-||Koncepti|Znanja|
+
+**Znanje** - nešto što je poznato ili se može pronaći/naučiti.
+**Koncepti** - nemaju status točnog ili netočnog.
+
+|C/K|Koncepti|Znanja|
 |-|-|-|
 |**Unutar organizacije**|Ispitivanje u studiju|R&D, laboratorijsko istraživanje|
 |**Unutar korisnikovog svijeta**|Korištenje, sudjelovanje i usklađivanje|Prikupljanje podataka|
 
+U **gornjem lijevom kvadrantu** nalaze se vrste aktivnosti koje se događaju unutar organizacije (koja stvara uslugu) i fokusirane su na kreiranje novih koncepata (neznanja). Kreiraju se ideje koje su nove i originalne i koje bi trebale biti drugačije od postojećeg načina rada/provođenja neke aktivnosti.
+
+U **gornjem desnom kvadrantu** nalaze se aktivnosti koje se obično provode u R&D odjelu ili u tehničkom laboratoriju gdje se stvaraju nova znanja. Kreiraju se nova znanja vezana primjerice uz tehnička znanja (koji materijal koristiti, koji hardver i softver je potreban) ili proceduralna znanja (koji i kakvi su poslovni procesi).
+
+U **donjem lijevom kvadrantu** nalaze se aktivnosti koje su "proizvođaču" usluge najmanje dostupne - podaci o korisnicima koji se teško prikupljaju kroz rad na terenu i komunikaciji s korisnicima. Ovdje se opisuje kako korisnici određuju svoje zadatke bez obzira na nove usluge. Kad se prikupe te informacije potrebno je raditi na improvizaciji i prilagodbi usluge na novi način.
+
+U **donjem desnom kvadrantu** nalaze se aktivnosti koje se odnose na kreiranje znanja, ali odnose se na korisnike. To su aktivnosti koje se odnose na prikupljanje informacija o korisnicima kroz rad na terenu odnosno u domovima korisnika, radnom okruženju ili u online okruženju.
+
+Svaka inovacija ima za cilj opisati neki proces kroz nove koncepte koji se kreiraju te koji generiraju nova znanja i kompetencije (stvari koje se znaju ili se mogu naučiti).
+
+#### Dizajnerska etnografija
+Društveno i socijalno istraživanje koje stvara znanje o ljudima i njihovim aktivnostima (dnevnim) te koji značaj određeni proizvodi i usluge imaju u njihovom iskustvu. Metode koje se koriste su promatranje, intervju i sl. U ovom slučaju je dizajner promatrač, a korisnik subjekt istraživanja.
+
+#### Participativni dizajn
+Korišteno u razvoju softvera, uključuje korisnika u sudizajniranje novih proizvoda i usluga. Metode koje se koriste su radionice i prototipiranje.
+
+#### Big i Thick Data
+|Big data istraživanje|Thick data istraživanje|
+|-|-|
+|Što se događa?|Što znači?|
+|Brojevi|Priče|
+|Pomaže identificirati činjenice iz prošlosti i sadašnjosti|Pomaže inspirirati o mogućnostima za budućnost|
+|Pouzdanost i generaliziranost|Vjerodostojnost i prenosivost|
+|Interpretaciju rade algoritmi|Interpretacija je iterativni proces|
+|Analiza ponašanje - što ljudi rade i što utječe na to|Kulturološka analiza - kako što ljudi rade je povezano s društvenim značenjem|
+|Nije potrebno uključiti korisnika direktno u istraživanje|Korisnik je u centru istraživanja (kontaktno)|
+|Specifično i fokusirano istraživanje|Otvoreno istraživanje|
