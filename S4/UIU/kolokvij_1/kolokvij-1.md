@@ -306,3 +306,7 @@ Korišteno u razvoju softvera, uključuje korisnika u sudizajniranje novih proiz
 |Analiza ponašanje - što ljudi rade i što utječe na to|Kulturološka analiza - kako što ljudi rade je povezano s društvenim značenjem|
 |Nije potrebno uključiti korisnika direktno u istraživanje|Korisnik je u centru istraživanja (kontaktno)|
 |Specifično i fokusirano istraživanje|Otvoreno istraživanje|
+
+**Big Data** se bavi stvaranjem uzorka ponašanja/kvantitativnim podacima (što korisnici rade). Ima mogućnost prikupljanja podataka u bilo kojoj točki lanca opskrbe (narudžba, prodaja, procesi, ponašanje kupaca). Podaci se prikupljaju u realnom vremenu (gužva na blagajni -> otvaranje nove blagajne). Prikupljeni podaci o ponašanju kupaca se analiziraju (broj javljanja službi za korisnike, korištenje aplikacije).
+
+**Thick Data** se bavi kvalitativnim podacima (zašto korisnici rade ono što rade). Podaci se prikupljaju od samo nekoliko korisnika - što rade, misle, osjećaju, znaju i sl. Podaci se prikupljaju u razdoblju od tjedan do mjesec dana. Sam proces prikupljanja i analize podataka je iterativan.
