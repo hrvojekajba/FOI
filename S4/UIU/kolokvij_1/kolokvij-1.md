@@ -272,6 +272,6 @@ Cilj metode je doći do šireg prikaza motivatora koji utječu na korištenje us
 ### Concept/Knowledge teorija
 ||Koncepti|Znanja|
 |-|-|-|
-|Unutar organizacije|Ispitivanje u studiju|R&D, laboratorijsko istraživanje|
-|Unutar korisnikovog svijeta|Korištenje, sudjelovanje i usklađivanje|Prikupljanje podataka|
+|**Unutar organizacije**|Ispitivanje u studiju|R&D, laboratorijsko istraživanje|
+|**Unutar korisnikovog svijeta**|Korištenje, sudjelovanje i usklađivanje|Prikupljanje podataka|
 
