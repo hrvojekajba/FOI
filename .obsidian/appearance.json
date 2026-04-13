@@ -1,6 +1,8 @@
 {
   "theme": "moonstone",
-  "accentColor": "#bdabe8",
-  "baseFontSize": 17,
-  "monospaceFontFamily": ""
+  "accentColor": "#006eff",
+  "baseFontSize": 16,
+  "monospaceFontFamily": "MonaspiceAr Nerd Font Mono",
+  "showViewHeader": true,
+  "cssTheme": "Atom"
 }
