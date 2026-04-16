@@ -1,0 +1,13 @@
+body {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.naglavlje {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+#lista-header {
+  text-align: center;
+}
