@@ -12,13 +12,30 @@
     />
     <link rel="stylesheet" href="../css/dokumentacija.css" />
   </head>
+
   <body>
+    <!--Naglavlje stranice-->
     <header class="naglavlje">
       <h1>Dokumentacija</h1>
     </header>
+
     <hr class="border border-primary border-3 opacity-50" />
-    <section class="lista-stranica">
-      <h3 id="lista-header">Sadržaj zadaće</h3>
+
+    <nav class="navigacija">
+      <a href="dokumentacija.html">Dokumentacija</a>
+      <a href="index.html">Početna stranica</a>
+      <a id="trenutna-stranica" href="galerija.html">Galerija</a>
+      <a href="naselja.html">Naselja</a>
+      <a href="opcina.html">Općina</a>
+      <a href="povijest.html">Povijest</a>
+      <a href="turizam.html">Turizam</a>
+    </nav>
+
+    <hr />
+
+    <!--Lista sa sadržajem web mjesta-->
+    <section class="lista-section">
+      <h3>Sadržaj zadaće</h3>
       <hr />
       <p>Listu svih stranica koje su napravljene možete vidjeti ovdje:</p>
       <ul>
@@ -29,6 +46,40 @@
         <li><a href="povijest.html">Povijest</a></li>
         <li><a href="turizam.html">Turizam</a></li>
       </ul>
+      <hr />
+    </section>
+
+    <!--Prikaz shema izrađenih stranica-->
+    <section class="wireframe">
+      <h3>Sheme izrađenih stranica</h3>
+      <hr />
+    </section>
+
+    <!--Sekcija sa informacijama i slikom autora-->
+    <section class="autor-section">
+      <h3>Informacije o autoru</h3>
+      <hr />
+      <div class="autor-div">
+        <div class="autor-info">
+          <ul>
+            <li><strong>Ime i prezime:</strong> Hrvoje Kajba</li>
+            <li><strong>Godina rođenja:</strong> 2005.</li>
+            <li><strong>Telefonski broj: </strong> 098 519 397</li>
+            <li><strong>E-mail:</strong> hkajba24@student.foi.hr</li>
+            <li><strong>Studij:</strong> IPS</li>
+            <li><strong>Godina studija:</strong> 2.</li>
+          </ul>
+        </div>
+        <div class="autor-slika">
+          <img
+            src="../resursi/slike/slika-autora.jpg"
+            alt="Slika autora"
+            width="250px"
+            height="250px"
+          />
+        </div>
+      </div>
+      <hr />
     </section>
   </body>
 </html>
