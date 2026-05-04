@@ -30,13 +30,13 @@ def ip_unos():
     while True:
         ip_adresa = input("Unesite IP adresu na koju se želite spojiti: ")
 
-        if not check_ip(ip_adresa):
+        if not check_ip(ip_adresa.strip()):
             print("Unesena neispravna IP adresa!")
             continue
         else:
             break
 
-    return ip_adresa
+    return ip_adresa.strip()
 
 
 # funkcija za unos porta
@@ -79,7 +79,7 @@ def main():
         # zaprimi odgovor od poslužitelja
         response, where_from = client_socket.recvfrom(1024)
 
-        print(f"Server je poslao: {response.decode()}")
+        print(f"\n[Server]: {response.decode()}\n")
 
         # ako je odgovor ime, pošalji jmbag i ime
         if response.decode() == "ime":
@@ -92,7 +92,7 @@ def main():
 
         nastavi: str = input("Želite li ponovno poslati poruku [d/n]? ")
 
-        if not nastavi == "d":
+        if not nastavi.strip().lower() == "d":
             break
 
 
