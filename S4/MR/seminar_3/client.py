@@ -68,6 +68,7 @@ def main():
 
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
+    # šalji poruke sve dok korisnik ne prestane
     while True:
         # korisnik definira poruku koju šalje poslužitelju
         message: str = jmbag
