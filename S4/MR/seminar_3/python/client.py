@@ -74,21 +74,21 @@ def main():
         message: str = jmbag
 
         # korisnik šalje prvotnu poruku poslužitelju
-        client_socket.sendto(message.encode(), destination)
+        client_socket.sendto(message.encode("ascii"), destination)
 
         # zaprimi odgovor od poslužitelja
         response, where_from = client_socket.recvfrom(1024)
 
-        print(f"\n[Server]: {response.decode()}\n")
+        print(f"\n[Server]: {response.decode('ascii')}\n")
 
         # ako je odgovor ime, pošalji jmbag i ime
         if response.decode() == "ime":
             message = f"{jmbag}, {ime}"
-            client_socket.sendto(message.encode(), destination)
+            client_socket.sendto(message.encode("ascii"), destination)
         # ako je odgovor prezime, pošalji jmbag i prezime
         elif response.decode() == "prezime":
             message = f"{jmbag}, {prezime}"
-            client_socket.sendto(message.encode(), destination)
+            client_socket.sendto(message.encode("ascii"), destination)
 
         nastavi: str = input("Želite li ponovno poslati poruku [d/n]? ")
 
