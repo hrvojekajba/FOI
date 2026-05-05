@@ -1,5 +1,7 @@
-import socket as s
+# napravijo karlo
+
 import signal
+import socket as s
 
 SERVER_ADDRESS = "127.0.0.1"
 SERVER_PORT = 50000
@@ -36,17 +38,17 @@ def main():
         except s.timeout:
             continue
 
-        print(f"[JMBAG]: {encoded_message.decode()}")
+        print(f"[JMBAG]: {encoded_message.decode('ascii')}")
 
         if ime_prezime:
-            server_socket.sendto("ime".encode(), client_info)
+            server_socket.sendto("ime".encode("ascii"), client_info)
             ime_prezime = False
         else:
-            server_socket.sendto("prezime".encode(), client_info)
+            server_socket.sendto("prezime".encode("ascii"), client_info)
             ime_prezime = True
 
         encoded_message, client_info = server_socket.recvfrom(BUFFER_SIZE)
-        print(f"[DOBIVENO]: {encoded_message.decode()}\n")
+        print(f"[DOBIVENO]: {encoded_message.decode('ascii')}\n")
 
     server_socket.close()
 
