@@ -7,3 +7,12 @@ S4/MR/izvjestaji/lab_4/*.pcapng
 S4/MR/izvjestaji/lab_5/*.pcapng
 S4/MR/izvjestaji/lab_6/*.pcapng
 S4/MR/izvjestaji/lab_7/*.pcapng
+
+# Ignoriraj sve PDF datoteke unutar izvještaja
+S4/MR/izvjestaji/lab_1/*.pdf
+S4/MR/izvjestaji/lab_2/*.pdf
+S4/MR/izvjestaji/lab_3/*.pdf
+S4/MR/izvjestaji/lab_4/*.pdf
+S4/MR/izvjestaji/lab_5/*.pdf
+S4/MR/izvjestaji/lab_6/*.pdf
+S4/MR/izvjestaji/lab_7/*.pdf
