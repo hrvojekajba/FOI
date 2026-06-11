@@ -1,3 +1,7 @@
+---
+geometry: "margin=2.5cm"
+---
+
 # Mreže računala - LAB1 izvještaj
 
 Hrvoje Kajba - IPS-2
