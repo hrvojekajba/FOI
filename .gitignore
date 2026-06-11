@@ -1,0 +1,9 @@
+# Ignoriraj sve wireshark capture datoteke
+
+S4/MR/izvjestaji/lab_1/*.pcapng
+S4/MR/izvjestaji/lab_2/*.pcapng
+S4/MR/izvjestaji/lab_3/*.pcapng
+S4/MR/izvjestaji/lab_4/*.pcapng
+S4/MR/izvjestaji/lab_5/*.pcapng
+S4/MR/izvjestaji/lab_6/*.pcapng
+S4/MR/izvjestaji/lab_7/*.pcapng
