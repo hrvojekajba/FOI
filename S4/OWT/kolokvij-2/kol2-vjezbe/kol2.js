@@ -1,5 +1,3 @@
-let gumbIspis = document.getElementsByClassName("ispis");
-
 class ObradaTeksta {
     constructor() {
         this.tekstA = "";
@@ -20,7 +18,7 @@ class ObradaTeksta {
 
 let obrada = new ObradaTeksta();
 
-gumbIspis[0].addEventListener("click", (event) => {
+document.getElementsByClassName("ispis")[0].addEventListener("click", () => {
     obrada.preuzmiUnos();
     obrada.prikaziPodatke();
 });
