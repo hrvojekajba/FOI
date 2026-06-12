@@ -8,12 +8,12 @@ class ObradaTeksta {
     }
 
     preuzmiUnos() {
-        this.tekstA = document.getElementById("tekstA");
-        this.tekstB = document.getElementById("tekstB");
+        this.tekstA = document.getElementById("tekstA").value;
+        this.tekstB = document.getElementById("tekstB").value;
     }
 
     prikaziPodatke() {
-        let totalDuljina = tekstA.value.length + tekstB.value.length;
+        let totalDuljina = this.tekstA.length + this.tekstB.length;
         this.ispisRezultata.innerHTML = `Prikaz rezultata: ${tekstA.value} - ${tekstB.value} = ${totalDuljina}`;
     }
 }
