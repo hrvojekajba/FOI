@@ -15,26 +15,31 @@ Hrvoje Kajba - IPS-2
 ### A1
 
 **Koliko je čvorova bilo na putu od računala na kojem radite do odredišta?**
+
 Na putu od računala na kojem radim do odredišta bilo je 11 čvorova.
 
 ### A2
 
 **Koliko je odgovora dobiveno od svakog pojedinog čvora?**
+
 Svaki pojedini čvor je vratio tri odgovora. To možemo vidjeti po tome da je svaki čvor na putu vratio tri vremena koja prikazuju koliko vremena je bilo potrebno da paket dođe do čvora i natrag.
 
 ### A3
 
 **Koja je IP adresa drugog čvora koji je ispisao traceroute?**
+
 192.168.18.1
 
 ### A4
 
 **Možete li prema IP adresi pronaći odgovor koji vam je poslao 2. čvor? Koliko je njegovih odgovora on pristiglo?**
+
 Mogu, odgovor koji je vraćen je ICMP poruka. Poslana su tri odgovora sa te IP adrese.
 
 ### A5
 
 **Odaberite jedan paket i odgovorite na sljedeće pitanje. Poruka ICMP-a (Internet Control Message Protocol) prenosi se kao teret (payload) nekog drugog protokola. O kojem se protokolu radi?**
+
 Odabrao sam paket koji sam već pregledao u pitanju A4. Poruka ICMP-a se prenosi preko IPv4 protokola.
 
 ---
@@ -44,6 +49,7 @@ Odabrao sam paket koji sam već pregledao u pitanju A4. Poruka ICMP-a se prenosi
 ### B1
 
 **Istraživanje topologije mreže**
+
 Za istraživanje topologije mreže sam odlučio odabrati četiri računala na različitim dijelovima svijeta, jedno u Europi, jedno u Aziji, jedno u Sjevernoj Americi i jedno u Južnoj Americi.
 
 Za Europu sam odabrao konzum.hr. Pokretanjem `traceroute` sam vidio da počinjem od IP adrese `192.168.1.1` (privatna IP adresa mog računala), te onda krećem kroz računalo IP adrese `10.80.245.242` (računalo koje se vrlo vjerojatno nalazi unutar Hrvatske ili njoj bližne zemlje zbog vremena putovanja paketa), te sam se onda prebacio kroz još par bližnjih računala dok nisam dobio finalni odgovor na `traceroute` od računala u Njemačkoj.
@@ -57,6 +63,7 @@ Za Južnu Ameriku sam odabrao amazon.com.br. U ovom izvođenju `traceroute` je s
 ### B2
 
 **Određivanje geostacionarnih satelitskih poveznica i prekooceanskih vodova**
+
 U svrhu pronalaženja prekooceanskih vodova sam odlučio ponovno `traceroute` pokrenuti prema amazon.com, pošto sam siguran da se poslužitelj nalazi u Sjevernoj Americi. Lako možemo primjetiti kada je paket izašao iz Europe prema Sjevernoj Americi zbog ogromnog skoka u vremenu prijenosa paketa:
 
 ```
