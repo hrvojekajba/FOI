@@ -17,5 +17,9 @@ S4/MR/izvjestaji/lab_5/*.pdf
 S4/MR/izvjestaji/lab_6/*.pdf
 S4/MR/izvjestaji/lab_7/*.pdf
 
+# Ignoriraj sve .im datoteke unutar izvještaja
+S4/MR/izvjestaji/lab_2/*.imn
+S4/MR/izvjestaji/lab_6/*.imn
+
 # Ignoriraj PDF unutar OWT/kolokvij-2
 S4/OWT/kolokvij-2/*.pdf
