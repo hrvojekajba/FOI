@@ -23,3 +23,6 @@ S4/MR/izvjestaji/lab_6/*.imn
 
 # Ignoriraj PDF unutar OWT/kolokvij-2
 S4/OWT/kolokvij-2/*.pdf
+
+# Ignoriraj PDF unutar PI/
+S4/PI/*.pdf
