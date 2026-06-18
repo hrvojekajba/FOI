@@ -1,7 +1,7 @@
 ---
 geometry: "margin=2.5cm"
 mainfont: Atkinson Hyperlegible Next
-monofont: JetBrainsMono NF Medium
+monofont: CaskaydiaCove Nerd Font
 ---
 
 # Mreže računala - LAB2 izvještaj
