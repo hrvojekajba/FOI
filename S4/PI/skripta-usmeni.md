@@ -368,7 +368,7 @@ Za razvoj .NET aplikacija postoje tri glavne GUI tehnologije:
 U korisničkom iskustvu postoje tri **_zlatna pravila_** kojih se vrijedi držati:
 
 1. **Prepustiti kontrolu korisniku**
-    - definirati interakciju na način da ne tjera korisnika na nepotrebne ili neželjene radnje (_MS Word - automatsko spremanje datoteke, Web preglednik - automatsko otvaranje `.pdf` dadoteka..._)
+    - definirati interakciju na način da ne tjera korisnika na nepotrebne ili neželjene radnje (_MS Word - automatsko spremanje datoteke, Web preglednik - automatsko otvaranje .pdf dadoteka..._)
     - omogućiti fleksibilnu interakciju (_mogućnost kopiranja putem desni klik -> copy i putem CTRL+C_)
     - omogućiti prekid i poništenje interakcije (_undo/redo opcija, odustani opcija, dodatna potvrda kod brisanja..._)
     - omogućiti izravnu interakciju korisnika s objektima koji se pojavljuju na zaslonu (_drag & drop privitna u mail aplikacijama_)
