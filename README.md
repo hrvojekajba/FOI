@@ -9,6 +9,6 @@ Ako studirate na FOI-u možete očekivati da će sustav za provjeru plagijata oz
 ---
 Sve skripte koje se nalaze u `.md` formatu se mogu pretvoriti u `.pdf` pomoću:
 ```bash
-$ pandoc skripta.md --pdf-engine="xelatex" -V block-headings -f markdown-implicit_figures -o skripta.pdf
+pandoc skripta.md --pdf-engine="xelatex" -V block-headings -f markdown-implicit_figures --highlight-style=tango -o skripta.pdf
 ```
 ili pomoću [web-stranica](https://www.innateblogger.com/p/markdown-to-pdf.html) koje automatiziraju proces.
