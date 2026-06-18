@@ -87,6 +87,8 @@ _Veza_ je sudjelovanje korisnika u slučaju korisnika, odnosno komunikacija izme
 
 U modelu slučaja korištenja se nalaze dva dijela: _dijagram slučajeva korištenja_ i _specifikacija slučajeva korištenja_. Dijagram je iznad opisan, a specifikacija je tekstualni opis s kojim se daje kontekst na dijagram slučajeva korištenja.
 
+\pagebreak
+
 ## 5. Dijagram klasa
 
 Dijagram klasa je strukturni statički dijagram, prikazuje klase, atribute i operacije klasa nekog sustava. Ne prikazuje privremene informacije koje su vezane za izvođenje radnji u nekom sustavu. Služi za modeliranje i skiciranje klasa i njihovih statičkih odnosa, rječnika podataka sustava i logičkog modela podataka.
@@ -132,6 +134,8 @@ Postoje operacije/metoda posluživanja, to su:
 4. **destruktor** - za dinamičke strukture ga osigurava kompilator (RemoveAttribute()...).
 
 **Asocijacija** je veza kojom se određuje da su instance jedne klase povezane sa instancama druge klase. Prikazuje suradnju na razini klasa i veze među instancama klasa. Asocijacije imaju karakteristike uloga, usmjerenja i kardinalnosti.
+
+\pagebreak
 
 Vrste asocijacija su generalizacija, agregacija i kompozicija.
 
@@ -184,6 +188,8 @@ Dijagram slijeda za scenarij korištenja prikazuje kako se odnos sustava i okoli
 
 ![Interakcija](./slike/interakcija.png)
 
+\pagebreak
+
 Postoji više vrsta poruka:
 
 - **sinhrona poruka** - daljnje izvršenje na objektu se zaustavlja sve dok se ne vrati odgovor na ovu poruku,
@@ -202,6 +208,8 @@ Dijagram slijeda omogućuje korištenje stereotipove objekata, tri primarna tipa
 ![Stereotipi](./slike/stereotipovi-slijed.png)
 
 **Dijagram komunikacije** je usmjeren strukturnim aspektima komunikacije objekata, odnosno objektima koji sudjeluju u komunikaciji i koje poruke razmjenjuju. Dijagram slijeda je usmjeren vremenskom tijeku komunikacije. Dijagram komunikacije ne omogučava napredne koncepte (loop, break...) i podrazumijeva da redoslijed primanja poruka nije bitan.
+
+\pagebreak
 
 ## 8. Dijagram aktivnosti
 
@@ -281,6 +289,8 @@ Postoje dva pristupa unutarnjoj strukturi komponente: komponenta kao bijela i ko
 **Komponenta kao crna kutija** govori da nije važna unutarnja struktura komponente, već samo sučelja koja komponenta osigurava ili zahtjeva, te artefakti koji opisuju ponašanje (dokumentacija).
 
 **Komponenta kao bijela kutija** govori da je bitna unutarnja struktura komponente te informacija o tome koji klasifikator (komponenta ili klasa) unutar komponente odrađuje koju funkcionalnost ili osigurava da funkcionalnost bude izvršena.
+
+\pagebreak
 
 ## 12. Programski koncepti
 
